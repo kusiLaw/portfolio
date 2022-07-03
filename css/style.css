@@ -28,7 +28,7 @@
     align-items: center;
   }
 
-  .logo-box h1 {
+  .logo-box span {
     font-size: 1.8rem;
     font-weight: 700px;
     line-height: 2rem;

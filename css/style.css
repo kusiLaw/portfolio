@@ -38,4 +38,105 @@
     order: 0;
     flex-grow: 0;
   }
+
+  #compress-menu {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .headline {
+    display: flex;
+    flex-direction: column;
+    height: 587.15px;
+    background: url("../images/header-shapes\ mobile.png") bottom no-repeat;
+    background-size: cover;
+    background-position: top;
+  }
+
+  .text-wrapper,
+  .social {
+    margin-left: 2.4rem;
+    margin-right: 2.4rem;
+  }
+
+  .text-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .text {
+    font-style: normal;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+
+  .text-primary {
+    height: 15rem;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    display: flex;
+    align-items: flex-end;
+    color: #172b4d;
+    margin-bottom: 1.2rem;
+  }
+
+  .text-secondry {
+    margin-top: 0.1px;
+    height: 14.6rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #344563;
+    text-align: left;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-items {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .social-header {
+    padding: auto;
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: left;
+    color: #7f8cff;
+  }
+
+  .social-icons {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  #social-icon-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    padding-inline-start: 0.1px;
+    gap: 2rem;
+  }
+
+  ul li {
+    flex: 1 0 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  ul li a {
+    justify-content: flex-start;
+    height: 2rem;
+    width: 1.717rem;
+    flex: 1 0 0;
+  }
 }

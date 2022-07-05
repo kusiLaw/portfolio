@@ -1,0 +1,164 @@
+/* @media only screen and (max-width: 375px) { */
+body {
+  font-family: Poppins, Helvetica, sans-serif;
+  font-size: 10px;
+}
+
+.container {
+  width: 375px;
+}
+
+/* reset settings for all browser */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  display: flex;
+  padding: 0.5rem;
+  justify-content: space-between;
+}
+
+.header-items {
+  flex-grow: 0;
+  align-items: baseline;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-box span {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2rem;
+  text-align: center;
+  color: #6070ff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#compress-menu {
+  height: 4rem;
+  width: 4rem;
+}
+
+a#logo,
+a#logo:hover,
+a#logo:active {
+  text-decoration: none;
+  color: #6070ff;
+}
+
+.main {
+  background-color: #f7f7f9;
+}
+
+section.presentation {
+  background-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 70px;
+  height: 718px;
+  display: flex;
+  flex-direction: column;
+}
+
+.presentation-content {
+  display: flex;
+  flex-direction: column;
+  height: 718px;
+  border-bottom-left-radius: 70px;
+  background: url("../images/header-shapes.png") no-repeat;
+  background-size: 375px 100%;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.text {
+  font-style: normal;
+  flex-grow: 0;
+  flex-shrink: 1;
+  order: 0;
+  margin-bottom: 1.2rem;
+}
+
+.text-primary {
+  top: 14em;
+  height: 15rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  display: flex;
+  align-items: flex-end;
+  color: #172b4d;
+  flex-grow: 0;
+  flex-wrap: wrap;
+}
+
+.text-secondry {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #344563;
+  text-align: left;
+  justify-content: flex-start;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.social-items {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.social-header {
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: left;
+  color: #7f8cff;
+  justify-content: flex-start;
+}
+
+.social-icons {
+  display: flex;
+  align-items: flex-start;
+}
+
+#social-icon-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+  padding-inline-start: 0.1px;
+  gap: 1rem;
+}
+
+ul li {
+  flex: 1 0 0;
+  display: flex;
+  justify-content: flex-start;
+}
+
+ul li a {
+  justify-content: flex-start;
+  height: 2rem;
+  width: 1.717rem;
+  flex: 1 0 0;
+}

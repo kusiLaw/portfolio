@@ -162,3 +162,24 @@ ul li a {
   width: 1.717rem;
   flex: 1 0 0;
 }
+
+.work {
+  display: grid;
+  grid-template-columns: auto;
+  row-gap: 8.8rem;
+  border: 1px solid red;
+}
+
+ /* .work:first-child  */
+ .card-works.first{
+  margin-top: 11.4rem;
+}
+
+.card-works {
+  border: 1px solid red;
+  height: 55.2rem;
+  margin-right: 2.4rem;
+  margin-left: 2.4rem;
+  background-color: white;
+  border-radius: 1.2rem;
+}

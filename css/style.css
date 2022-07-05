@@ -2,6 +2,7 @@
 body {
   font-family: Poppins, Helvetica, sans-serif;
   font-size: 10px;
+  width: 375px;
 }
 
 /* reset settings for all browser */
@@ -44,6 +45,13 @@ body {
 #compress-menu {
   height: 4rem;
   width: 4rem;
+}
+
+a#logo,
+a#logo:hover,
+a#logo:active {
+  text-decoration: none;
+  color: #6070ff;
 }
 
 .main {

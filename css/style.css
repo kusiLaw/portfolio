@@ -2,6 +2,9 @@
 body {
   font-family: Poppins, Helvetica, sans-serif;
   font-size: 10px;
+}
+
+.container {
   width: 375px;
 }
 
@@ -72,7 +75,7 @@ section.presentation {
   height: 718px;
   border-bottom-left-radius: 70px;
   background: url("../images/header-shapes.png") no-repeat;
-  background-size: 100% 100%;
+  background-size: 375px 100%;
 }
 
 .text-wrapper {

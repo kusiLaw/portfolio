@@ -64,7 +64,7 @@ a#logo:active {
 section.presentation {
   background-color: rgb(255, 255, 255);
   border-bottom-left-radius: 70px;
-  height: 718px;
+  height: 600px;
   display: flex;
   flex-direction: column;
 }
@@ -72,10 +72,12 @@ section.presentation {
 .presentation-content {
   display: flex;
   flex-direction: column;
-  height: 718px;
+  /* height: 718px; */
   border-bottom-left-radius: 70px;
   background: url("../images/header-shapes.png") no-repeat;
-  background-size: 375px 100%;
+  /* background-size: 375px 100%; */
+  background-size: contain;
+  background-position: top;
 }
 
 .text-wrapper {
@@ -108,8 +110,8 @@ section.presentation {
 
 .text-secondry {
   font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-size: 16px;
+  line-height: 24px;
   color: #344563;
   text-align: left;
   justify-content: flex-start;
@@ -129,9 +131,11 @@ section.presentation {
 }
 
 .social-header {
+  width: 117px;
+  height: 24px;
   font-weight: 500;
-  font-size: 1.6rem;
-  line-height: 2.4rem;
+  font-size: 1.6em;
+  line-height: 24px;
   text-align: left;
   color: #7f8cff;
   justify-content: flex-start;
@@ -169,7 +173,7 @@ ul li a {
   height: 2,788px;
   width: 375px;
   row-gap: 8.8rem;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 11.4rem 1.4rem;
 
   /* padding: 114px, 24px, 114px, 24px; */

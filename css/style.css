@@ -539,6 +539,8 @@ button.secondary:disabled {
 .framework {
   width: 327px;
   height: 72px;
+  display: flex;
+  flex-direction: column;
 }
 
 .btn-seperator {

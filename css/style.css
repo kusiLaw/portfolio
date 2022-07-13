@@ -397,6 +397,7 @@ button.secondary {
   border-radius: 8px;
 }
 
+#getInTouch:hover,
 .action button:hover,
 button.secondary:hover {
   background: #6070ff;
@@ -404,11 +405,13 @@ button.secondary:hover {
   color: #fff;
 }
 
+#getInTouch:active,
 .action button:active,
 button.secondary:active {
   background: #2230d2;
 }
 
+#getInTouch:disabled,
 .action button:disabled,
 button.secondary:disabled {
   color: #5e6c84;

@@ -341,6 +341,7 @@ li.counter {
   width: 295px;
 }
 
+
 .action button,
 button.secondary {
   border: 1px solid #6070ff;
@@ -365,6 +366,7 @@ button.secondary {
   width: 162px;
 }
 
+.submit-li button,
 .action button:hover,
 button.secondary:hover {
   background: #6070ff;
@@ -372,11 +374,13 @@ button.secondary:hover {
   color: #fff;
 }
 
+.submit-li button,
 .action button:active,
 button.secondary:active {
   background: #2230d2;
 }
 
+.submit-li button,
 .action button:disabled,
 button.secondary:disabled {
   color: #5e6c84;
@@ -561,4 +565,113 @@ button.secondary:disabled {
 button.normal-btn {
   border: none;
   background-color: white;
+}
+
+.footer {
+  border-top-left-radius: 80px;
+  width:375px;
+  height: auto;
+  background: url("../images/contact-form.svg") no-repeat;
+  background-position: 100%;
+  background-color: #6070FF;
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+  align-items: center;
+  padding: 103px 24px 8px 24px;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: auto;
+  width: 100%;
+}
+
+.contact-me h2 {
+  width: 100%;
+  height: auto;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.contact-me p {
+  width: 100%;
+  height: auto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #EBEBFF;
+}
+
+.contact-forms {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.message-form ul {
+  display: flex;
+  flex-direction: column;
+  gap:18px;
+  width: 100%;
+}
+
+.message-form ul li {
+ width: 100%;
+}
+.message-form ul li input {
+ background: #FFFFFF;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  padding:15px ;
+}
+
+.message-form ul li textarea {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  width: 100%;
+  height: 170px;
+  color: #B3BAC5;
+  background: #FFFFFF;
+  border: 1px solid #CFD8DC;
+  border-radius: 8px;
+  padding: 15px 38px 15px 16px;
+  resize: none;
+}
+
+.message-form ul li button {
+  align-items: center;
+  padding: 12px 16px;
+  width: 140px;
+  height: 48px;
+  background: #FFFFFF;
+  border-radius: 8px;
+}
+
+.contact-forms img {
+  width: 50%;
+  height: 5px;
+}
+
+.last-img{
+  display: flex;
+  justify-content: center;
+}
+
+.navigation ul {
+  display: none;
+ 
 }

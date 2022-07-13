@@ -6,7 +6,8 @@ body {
 }
 
 .container {
-  max-width: 375px;
+  max-width: 768px;
+  min-width: 375px;
 }
 
 /* reset settings for all browser */
@@ -73,10 +74,10 @@ section.presentation {
 .presentation-content {
   display: flex;
   flex-direction: column;
-  border-bottom-left-radius: 70px;
-  background: url("../images/header-shapes.png") no-repeat;
-  background-size: contain;
-  background-position: top;
+  height: 100%;
+  background: url("../images/header-shapes-mobile@2x.svg") no-repeat;
+  background-size: cover;
+  width: 100%;
 }
 
 .text-wrapper {
@@ -84,6 +85,7 @@ section.presentation {
   flex-direction: column;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  width: auto;
 }
 
 .text {
@@ -167,10 +169,9 @@ ul li a {
 
 .work {
   display: grid;
-  grid-template-columns: 327px;
+  grid-template-columns: 100%;
   width: 100%;
   row-gap: 88px;
-  justify-content: center;
   padding: 114px 14px;
 }
 
@@ -179,27 +180,36 @@ ul li a {
   flex-direction: column;
   border: 1px solid #dfe1e6;
   background-color: white;
+  align-items: stretch;
+  width: auto;
+  width: 100%;
   border-radius: 12px;
   gap: 1rem;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .snapshoot,
 .left-block {
-  width: 295px;
+  width: 100%;
+}
+
+.snapshoot img {
+  width: 100%;
+  height: auto;
 }
 
 .snapshoot {
-  height: 220px;
+  height: auto;
   border-radius: 8px;
 }
 
 .left-block {
   display: flex;
   flex-direction: column;
-  height: 335px;
+  height: auto;
   align-items: flex-start;
   gap: 1.2rem;
+  width: 100%;
 }
 
 .left-block.multy {
@@ -211,16 +221,16 @@ ul li a {
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
-  width: 295px;
-  height: 80px;
+  width: 90%;
+  height: auto;
   flex: none;
   order: 0;
-  flex-grow: 0;
+  flex-grow: 1;
 }
 
-.primary-text.multy {
+/* .primary-text.multy {
   gap: 30px;
-}
+} */
 
 .primary-text .title {
   width: 295px;
@@ -232,29 +242,39 @@ ul li a {
 }
 
 .primary-text .title.multy {
-  width: 295px;
-  height: 40px;
+  width: 90%;
+  height: auto;
   font-weight: 700;
   font-size: 32px;
   line-height: 30px;
+  line-height: 44px;
   color: #172b4d;
   text-align: left;
 }
 
+.frame2 {
+  min-width: 236px;
+
+  /* remove width if you don't it to expand width: 65%; */
+  display: flex;
+}
+
 .frame2 ul {
   display: flex;
-  justify-self: start;
   width: 236px;
+  height: auto;
   align-items: center;
   gap: 5px;
-  flex-grow: 0;
+  padding: 8px;
+  flex-grow: 1;
 }
 
 .frame2 ul li {
+  width: 100%;
   height: 1.6rem;
   line-height: 1.6rem;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
@@ -274,7 +294,8 @@ li.counter {
   font-weight: 600;
   line-height: 16px;
   text-align: left;
-  flex-grow: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .frame2 ul li.role,
@@ -283,24 +304,26 @@ li.counter {
   font-size: 13px;
   font-weight: 600;
   line-height: 16px;
-  text-align: left;
-}
-
-.frame2 ul li.year {
-  flex-grow: 0;
 }
 
 .frame2 ul li.role {
+  width: 88px;
+  flex-grow: 2;
   flex-shrink: 0;
-  flex-flow: 3;
+  justify-content: center;
+}
+
+.frame2 ul li.year {
+  width: 29px;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
 .primary-text_text {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  height: 76px;
-  width: 295px;
+  justify-content: flex-start;
+  height: auto;
+  width: 100%;
 }
 
 .primary-text_text p {
@@ -365,6 +388,19 @@ button.secondary {
   width: 162px;
 }
 
+.message-form ul li button {
+  align-items: center;
+  padding: 12px 16px;
+  width: 140px;
+  height: 48px;
+  background: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+#getInTouch:hover,
 .action button:hover,
 button.secondary:hover {
   background: #6070ff;
@@ -372,11 +408,13 @@ button.secondary:hover {
   color: #fff;
 }
 
+#getInTouch:active,
 .action button:active,
 button.secondary:active {
   background: #2230d2;
 }
 
+#getInTouch:disabled,
 .action button:disabled,
 button.secondary:disabled {
   color: #5e6c84;
@@ -385,10 +423,10 @@ button.secondary:disabled {
 .about {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   padding: 114px 24px;
   gap: 24px;
-  width: 375px;
+  width: 100%;
   background-color: white;
   border-top-right-radius: 80px;
 }
@@ -398,16 +436,16 @@ button.secondary:disabled {
   flex-direction: column;
   align-items: flex-start;
   gap: 12px;
-  width: 327px;
-  height: 409px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 24px;
   flex: none;
-  order: 0;
   flex-grow: 0;
 }
 
 .top .text-primary {
-  width: 327px;
-  height: 101px;
+  width: 70%;
+  height: auto;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -418,8 +456,10 @@ button.secondary:disabled {
 }
 
 .top .text-secondary {
-  width: 327px;
-  height: 144px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: auto;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -447,28 +487,24 @@ button.secondary:disabled {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 327px;
-  height: 464.15px;
-  flex: none;
-  flex-grow: 0;
+  width: 100%;
+  height: auto;
 }
 
 .frame12 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 327px;
-  height: 320.15px;
-  flex: none;
-  flex-grow: 0;
+  width: 100%;
+  height: auto;
 }
 
 .frame7 {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  width: 327px;
-  height: 72px;
+  width: 100%;
+  height: auto;
   padding: 24px;
 }
 
@@ -484,13 +520,13 @@ button.secondary:disabled {
 .lang-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
+  justify-content: center;
   padding: 12px;
   gap: 12px;
-  width: 327px;
-  height: 248.15px;
+  width: 100%;
+  height: 100%;
   flex: none;
-  flex-grow: 0;
 }
 
 .frame9,
@@ -499,7 +535,7 @@ button.secondary:disabled {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 303px;
+  width: 100%;
   height: 66.72px;
   background: #f7f7f9;
   border-radius: 8px;
@@ -528,19 +564,21 @@ button.secondary:disabled {
 }
 
 .framework {
-  width: 327px;
+  width: 100%;
   height: 72px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.btn-seperator {
+.framework img {
+  width: 100%;
   height: 1px;
   background: #dfe1e6;
 }
 
 .language {
-  width: 327px;
+  width: 100%;
   height: 72px;
   display: flex;
   align-items: center;
@@ -550,7 +588,7 @@ button.secondary:disabled {
 
 .language h3,
 .button.normal-btn {
-  font-style: normal;
+  width: 100%;
   height: 24px;
   font-weight: 500;
   font-size: 20px;
@@ -561,4 +599,104 @@ button.secondary:disabled {
 button.normal-btn {
   border: none;
   background-color: white;
+}
+
+.footer {
+  border-top-left-radius: 80px;
+  width: 100%;
+  height: auto;
+  background: url("../images/contact-form.svg") no-repeat;
+  background-position: 100%;
+  background-color: #6070ff;
+  display: flex;
+  gap: 60px;
+  flex-direction: column;
+  align-items: center;
+  padding: 103px 24px 8px 24px;
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  height: auto;
+  width: 100%;
+}
+
+.contact-me h2 {
+  width: 100%;
+  height: auto;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.contact-me p {
+  width: 100%;
+  height: auto;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
+.contact-forms {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.message-form ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
+.message-form ul li {
+  width: 100%;
+}
+
+.message-form ul li input {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  padding: 15px;
+}
+
+.message-form ul li textarea {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  width: 100%;
+  height: 170px;
+  color: #b3bac5;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding: 15px 38px 15px 16px;
+  resize: none;
+}
+
+.contact-forms img {
+  width: 50%;
+  height: 5px;
+}
+
+.last-img {
+  display: flex;
+  justify-content: center;
+}
+
+.navigation ul {
+  display: none;
 }

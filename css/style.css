@@ -395,6 +395,9 @@ button.secondary {
   height: 48px;
   background: #fff;
   border-radius: 8px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 #getInTouch:hover,

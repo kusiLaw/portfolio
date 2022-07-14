@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 body {
   font-family: Poppins, Helvetica, sans-serif;
@@ -129,6 +129,11 @@ section.presentation {
 .social-items {
   justify-content: space-between;
   align-items: flex-start;
+  transition: color 2s;
+}
+
+.social-items:hover {
+  font-size: 20px;
 }
 
 .social-header,
@@ -165,6 +170,10 @@ ul li a {
   height: 2rem;
   width: 1.717rem;
   flex: 1 0 0;
+}
+
+.social-icon-list li a img:hover {
+  transform: scale(1.5);
 }
 
 .work {

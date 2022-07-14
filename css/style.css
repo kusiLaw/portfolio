@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-  max-width: 768px;
+  /* max-width: 768px; */
   min-width: 375px;
 }
 
@@ -699,4 +699,141 @@ button.normal-btn {
 
 .navigation ul {
   display: none;
+}
+
+
+
+@media screen and (min-width :768px) {
+
+  .header-container {
+    padding: 25px 100px;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 259px;
+    height: 40px;
+
+  }
+
+  .navigation ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #344563;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .nav-link:link,
+  .nav-link:visited .nav-link:hover,
+  .nav-link:active {
+    text-decoration: none;
+  }
+
+  .navigation img {
+    display: none;
+    height: 0px;
+  }
+
+  .presentation-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: url("../images/Header-bg.svg") no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .presentation-content {
+    align-items: center;
+  }
+
+  .text-wrapper {
+    width: 70%;
+    border: 2px solid red;
+  }
+
+  .work{
+    padding: 142px ;
+    row-gap: 142px;
+  }
+  
+  .card-works {
+    flex-direction: row; 
+  }
+
+  .desktop-1-normal div.snapshoot img{
+    background: url("../images/Snapshoot-Portfolio-desktop-1.png");
+  }
+
+  .about{
+    padding: 142px ;
+    flex-direction: row;
+    gap: 25px
+  }
+
+  .about-items{
+    width: 50%;
+  }
+
+  .frame7 h3,
+  .about-items {
+    color: #344563;
+  }
+  .lang-list{
+    flex-direction: row;
+    /* border: 2px solid red; */
+    justify-content: flex-start;
+  }
+
+  .lang-list li{
+    /* width: 122px; */
+    width: 90%;
+    height: auto;
+    flex: 0 1 0;
+    
+    justify-content: flex-start;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lang-list li img,
+  .lang-list li span{
+    justify-content: center;
+    align-items: center;
+    flex-grow: 0 1 0;
+  }
+
+  .footer{
+    border: 2px solid red ;
+    padding: 124px 20%;
+    background: url("../images/contact-form-background-shapes-large.svg");
+    background-color: #6070ff;
+    background-size: contain 100%;
+  }
+   
+  .submit-li{
+    display: flex;
+    justify-content: center;
+    margin-top: 9px;
+  }
+
+  .footer-items{
+    padding-left: 116px;
+    padding-right: 116px;
+  }
+
+  .last-img {
+    display: none;
+  }
+  
 }

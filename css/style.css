@@ -903,6 +903,7 @@ button.normal-btn {
     display: flex;
     justify-content: center;
     margin-top: 9px;
+    border: none;
   }
 
   .footer-items {

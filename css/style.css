@@ -906,6 +906,20 @@ button.normal-btn {
     border: none;
   }
 
+  .submit-li button {
+    width: 1440px;
+    height: 846px;
+    border: none;
+    color: #6070ff;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+
   .footer-items {
     padding-left: 116px;
     padding-right: 116px;

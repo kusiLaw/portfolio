@@ -144,6 +144,11 @@ section.presentation {
   color: #7f8cff;
   flex: none;
   flex-grow: 0;
+  transition: color 2s;
+}
+
+.social-header:hover {
+  color: pink;
 }
 
 .social-icons {

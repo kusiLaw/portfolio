@@ -21,16 +21,24 @@
   <body>
     <div class="container">
       <header class="header">
-        <div class="header-container">
-          <div class="logo-box header-items">
-            <span><a href="#" id="logo">My Logo</a></span>
+        <div class="header-wrapper">
+          <div class="header-container">
+            <div class="logo-box header-items">
+              <span><a href="#" id="logo">My Logo</a></span>
+            </div>
+            <nav class="navigation header-items">
+              <img src="./images/Enabled.png" alt="" id="compress-menu" />
+            
+              <ul>
+                <li><a class="nav-link" href="#my-works">Portfolio</a> </li>
+                <li><a class="nav-link"  href="#me">About</a> </li>
+                <li><a class="nav-link"  href="#contact">Contact</a> </li>
+              </ul>
+            </nav>
           </div>
-          <nav class="navigation header-items">
-            <img src="./images/Enabled.png" alt="" id="compress-menu" />
-          </nav>
         </div>
       </header>
-
+      
       <main class="main">
         <section class="presentation">
           <div class="presentation-content">
@@ -76,13 +84,14 @@
             </div>
           </div>
         </section>
-
-        <section class="work">
+        <!-- work-card-items -->
+        <section class="work" id="my-works">
           <div class="card-works">
             <div class="snapshoot">
-              <img src="./images/Snapshoot.png" alt="work-snapshoot" />
+              <img class="mobile" src="./images/Snapshoot.png" alt="work-snapshoot" />
+              <img class="desktop" src="./images/Snapshoot-Portfolio-desktop-1.png" alt="work-snapshoot" />
             </div>
-            <div class="left-block">
+            <div class="left-block left-block-1 work-card-items">
               <div class="primary-text">
                 <h2 class="title">Tonic</h2>
                 <div class="frame2">
@@ -119,19 +128,22 @@
           </div>
 
           <div class="card-works">
-            <div class="snapshoot">
-              <img src="./images/snapshoot2.png" alt="work-snapshoot" />
+            <div class="snapshoot inverse">
+              <img class="mobile" src="./images/snapshoot2.png" alt="work-snapshoot" />
+              <img class="desktop" src="./images/Snapshoot-Portfolio-desktop-2.png" alt="work-snapshoot" />
             </div>
-            <div class="left-block multy">
+            <div class="left-block left-block-2  multy ">
               <div class="primary-text multy">
                 <h2 class="title multy"> Multi-Post Stories </h2>
                 <div class="frame2">
                   <ul>
-                    <li class="client">CANOPY</li>
+                    <li class="client mobile">CANOPY</li>
+                    <li class="client desktop fu-togle">FACEBOOK</li>
                     <li class="counter">
                       <img src="./images/Counter.png" alt="dot" />
                     </li>
-                    <li class="role">Back End Dev</li>
+                    <li class="role mobile">Back End Dev</li>
+                    <li class="role desktop">Full Stack Dev</li>
                     <li class="counter">
                       <img src="./images/Counter.png" alt="dot" />
                     </li>
@@ -140,16 +152,21 @@
                 </div>
               </div>
               <div class="primary-text_text">
-                <p>
+                <p class = "mobile">
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required.
+                </p>
+                <p class = "desktop" >
+                  Experimental content creation feature that allows users to add 
+                  to an existing story over the course of a day without spamming their friends.
                 </p>
               </div>
               <div class="tags">
                 <ul>
-                  <li class="tag">html</li>
-                  <li class="tag">css</li>
-                  <li class="tag">javaScript</li>
+                  <li class="tag tag-1"><span class="sm">html</span></li>
+                  <li class="tag desktop"><span >Ruby on rails</span> </li>
+                  <li class="tag tag-2"><span class="sm">css</span></li>
+                  <li class="tag tag-3"><span class="sm">javaScript</span></li>
                 </ul>
               </div>
               <div class="action">
@@ -160,18 +177,22 @@
 
           <div class="card-works">
             <div class="snapshoot">
-              <img src="./images/snapshoot3.png" alt="work-snapshoot" />
+              <img class="mobile" src="./images/snapshoot3.png" alt="work-snapshoot" />
+              <img class="desktop" src="./images/Snapshoot-Portfolio-desktop-3.png" alt="work-snapshoot" />
             </div>
             <div class="left-block">
               <div class="primary-text">
-                <h2 class="title">Tonic</h2>
+                <h2 class="title mobile">Tonic</h2>
+                <h2 class="title desktop fu-togle">Facebook 360</h2>
                 <div class="frame2">
                   <ul>
-                    <li class="client">CANOPY</li>
+                    <li class="client mobile">CANOPY</li>
+                    <li class="client desktop">FACEBOOK</li>
                     <li class="counter">
                       <img src="./images/Counter.png" alt="dot" />
                     </li>
-                    <li class="role">Back End Dev</li>
+                    <li class="role mobile"> Back End Dev </li>
+                    <li class="role desktop"> Full Stack Dev </li>
                     <li class="counter">
                       <img src="./images/Counter.png" alt="dot" />
                     </li>
@@ -180,14 +201,20 @@
                 </div>
               </div>
               <div class="primary-text_text">
-                <p>
+                <p class="mobile">
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required.
                 </p>
+                <p class = "desktop" >
+                  Exploring the future of media in Facebook's first Virtual 
+                  Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.
+                </p>
+
               </div>
               <div class="tags">
                 <ul>
                   <li class="tag">html</li>
+                  <li class="tag desktop">Ruby on rails</li>
                   <li class="tag">css</li>
                   <li class="tag">javaScript</li>
                 </ul>
@@ -199,19 +226,25 @@
           </div>
 
           <div class="card-works">
-            <div class="snapshoot">
-              <img src="./images/snapshoot4.png" alt="work-snapshoot" />
+            <div class="snapshoot inverse">
+              <img class="mobile" src="./images/snapshoot4.png" alt="work-snapshoot" />
+              <img class="desktop" src="./images/Snapshoot-Portfolio-desktop-4.png" alt="work-snapshoot" />
             </div>
             <div class="left-block multy">
               <div class="primary-text multy">
-                <h2 class="title multy"> Multi-Post Stories </h2>
+                <h2 class="title multy mobile"> Multi-Post Stories </h2>
+                <h2 class="title multy desktop">Uber Navigation</h2>
+
                 <div class="frame2">
                   <ul>
-                    <li class="client">CANOPY</li>
+                    <li class="client mobile">CANOPY</li>
+                    <li class="client desktop fu-togle">Uber</li>
+
                     <li class="counter">
                       <img src="./images/Counter.png" alt="dot" />
                     </li>
-                    <li class="role">Back End Dev</li>
+                    <li class="role mobile">Back End Dev</li>
+                    <li class="role desktop">Lead Developer</li>
                     <li class="counter">
                       <img src="./images/Counter.png" alt="dot" />
                     </li>
@@ -220,14 +253,19 @@
                 </div>
               </div>
               <div class="primary-text_text">
-                <p>
+                <p class="mobile">
                   A daily selection of privately personalized reads; no accounts
                   or sign-ups required.
+                </p>
+                <p class="desktop">
+                  A smart assistant to make driving more safe, efficient, 
+                  and fun by unlocking your most expensive computer: your car.
                 </p>
               </div>
               <div class="tags">
                 <ul>
                   <li class="tag">html</li>
+                  <li class="tag desktop">Ruby on rails</li>
                   <li class="tag">css</li>
                   <li class="tag">javaScript</li>
                 </ul>
@@ -239,8 +277,8 @@
           </div>
         </section>
 
-        <section class="about">
-          <div class="top">
+        <section class="about" id="me">
+          <div class="top about-items">
             <h2 class="text-primary">About Myself</h2>
             <p class="text-secondary">
               Hello I’m a software developer! I can help you build a product,
@@ -281,7 +319,7 @@
             <button type="button" class="secondary">Get my resume</button>
           </div>
 
-          <ul class="skill-list">
+          <ul class="skill-list about-items">
             <li class="frame12">
               <div class="frame7">
                 <h3>Languages</h3>
@@ -337,8 +375,8 @@
         </section>
       </main>
 
-      <footer class="footer">
-        <div class="contact-me">
+      <footer class="footer" id="contact">
+        <div class="contact-me footer-items">
           <h2>Contact me</h2>
           <p>
             If you have an application you are interested in developing, a
@@ -347,7 +385,7 @@
           </p>
         </div>
 
-        <div class="contact-forms">
+        <div class="contact-forms footer-items">
           <form class="message-form" action="https://formspree.io/f/1" method="post">
             <ul>
               <li class="input-li">
@@ -357,10 +395,10 @@
                 <input type="email" name="email" id="mail" placeholder="natajay14@gmail.com" required />
               </li>
               <li class="text-area-li">
-                <textarea name="msg" id="msg" maxlength="500" required>Write your messages here</textarea>
+                <textarea name="msg" id="msg" maxlength="500" required placeholder="Write your messages here"></textarea>
               </li>
               <li class="submit-li">
-                <button type="submit" id="getInTouch">Get it Touch</button>
+                <button type="submit" id="getInTouch">Get in touch</button>
               </li>
             </ul>
           </form>

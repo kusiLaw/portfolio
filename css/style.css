@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 body {
   font-family: Poppins, Helvetica, sans-serif;
@@ -129,6 +129,11 @@ section.presentation {
 .social-items {
   justify-content: space-between;
   align-items: flex-start;
+  transition: color 2s;
+}
+
+.social-items:hover {
+  font-size: 20px;
 }
 
 .social-header,
@@ -139,6 +144,11 @@ section.presentation {
   color: #7f8cff;
   flex: none;
   flex-grow: 0;
+  transition: color 2s;
+}
+
+.social-header:hover {
+  color: pink;
 }
 
 .social-icons {
@@ -398,26 +408,6 @@ button.secondary {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-}
-
-#getInTouch:hover,
-.action button:hover,
-button.secondary:hover {
-  background: #6070ff;
-  box-shadow: 0.1px 8px 16px rgba(64, 83, 252, 0.24);
-  color: #fff;
-}
-
-#getInTouch:active,
-.action button:active,
-button.secondary:active {
-  background: #2230d2;
-}
-
-#getInTouch:disabled,
-.action button:disabled,
-button.secondary:disabled {
-  color: #5e6c84;
 }
 
 .about {
@@ -699,4 +689,28 @@ button.normal-btn {
 
 .navigation ul {
   display: none;
+}
+
+#getInTouch:hover,
+.action button:hover,
+button.secondary:hover {
+  background: #6070ff;
+  box-shadow: 0.1px 8px 16px rgba(64, 83, 252, 0.24);
+  color: #fff;
+}
+
+#getInTouch:active,
+.action button:active,
+button.secondary:active {
+  background: #2230d2;
+}
+
+#getInTouch:disabled,
+.action button:disabled,
+button.secondary:disabled {
+  color: #5e6c84;
+}
+
+.social-icon-list li a img:hover {
+  transform: scale(1.5);
 }

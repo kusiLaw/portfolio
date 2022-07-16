@@ -172,10 +172,6 @@ ul li a {
   flex: 1 0 0;
 }
 
-.social-icon-list li a img:hover {
-  transform: scale(1.5);
-}
-
 .work {
   display: grid;
   grid-template-columns: 100%;
@@ -407,26 +403,6 @@ button.secondary {
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-}
-
-#getInTouch:hover,
-.action button:hover,
-button.secondary:hover {
-  background: #6070ff;
-  box-shadow: 0.1px 8px 16px rgba(64, 83, 252, 0.24);
-  color: #fff;
-}
-
-#getInTouch:active,
-.action button:active,
-button.secondary:active {
-  background: #2230d2;
-}
-
-#getInTouch:disabled,
-.action button:disabled,
-button.secondary:disabled {
-  color: #5e6c84;
 }
 
 .about {
@@ -708,4 +684,28 @@ button.normal-btn {
 
 .navigation ul {
   display: none;
+}
+
+#getInTouch:hover,
+.action button:hover,
+button.secondary:hover {
+  background: #6070ff;
+  box-shadow: 0.1px 8px 16px rgba(64, 83, 252, 0.24);
+  color: #fff;
+}
+
+#getInTouch:active,
+.action button:active,
+button.secondary:active {
+  background: #2230d2;
+}
+
+#getInTouch:disabled,
+.action button:disabled,
+button.secondary:disabled {
+  color: #5e6c84;
+}
+
+.social-icon-list li a img:hover {
+  transform: scale(1.5);
 }

@@ -21,23 +21,24 @@
   <body>
     <div class="container">
       <header class="header">
-        <div class="header-container">
-          <div class="logo-box header-items">
-            <span><a href="#" id="logo">My Logo</a></span>
+        <div class="header-wrapper">
+          <div class="header-container">
+            <div class="logo-box header-items">
+              <span><a href="#" id="logo">My Logo</a></span>
+            </div>
+            <nav class="navigation header-items">
+              <img src="./images/Enabled.png" alt="" id="compress-menu" />
+            
+              <ul>
+                <li><a class="nav-link" href="#my-works">Portfolio</a> </li>
+                <li><a class="nav-link"  href="#me">About</a> </li>
+                <li><a class="nav-link"  href="#contact">Contact</a> </li>
+              </ul>
+            </nav>
           </div>
-          <nav class="navigation header-items">
-            <img src="./images/Enabled.png" alt="" id="compress-menu" />
-          
-            <ul>
-              <li><a class="nav-link" href="#my-works">Portfolio</a> </li>
-              <li><a class="nav-link"  href="#me">About</a> </li>
-              <li><a class="nav-link"  href="#contact">Contact</a> </li>
-            </ul>
-
-          </nav>
         </div>
       </header>
-
+      
       <main class="main">
         <section class="presentation">
           <div class="presentation-content">
@@ -83,10 +84,10 @@
             </div>
           </div>
         </section>
-
+        <!-- work-card-items -->
         <section class="work" id="my-works">
-          <div class="card-works desktop-1-normal card-1">
-            <div class="snapshoot work-card-items">
+          <div class="card-works">
+            <div class="snapshoot">
               <img class="mobile" src="./images/Snapshoot.png" alt="work-snapshoot" />
               <img class="desktop" src="./images/Snapshoot-Portfolio-desktop-1.png" alt="work-snapshoot" />
             </div>
@@ -126,7 +127,7 @@
             </div>
           </div>
 
-          <div class="card-works  card-2">
+          <div class="card-works">
             <div class="snapshoot inverse">
               <img class="mobile" src="./images/snapshoot2.png" alt="work-snapshoot" />
               <img class="desktop" src="./images/Snapshoot-Portfolio-desktop-2.png" alt="work-snapshoot" />
@@ -174,7 +175,7 @@
             </div>
           </div>
 
-          <div class="card-works card-3">
+          <div class="card-works">
             <div class="snapshoot">
               <img class="mobile" src="./images/snapshoot3.png" alt="work-snapshoot" />
               <img class="desktop" src="./images/Snapshoot-Portfolio-desktop-3.png" alt="work-snapshoot" />
@@ -224,7 +225,7 @@
             </div>
           </div>
 
-          <div class="card-works card-4">
+          <div class="card-works">
             <div class="snapshoot inverse">
               <img class="mobile" src="./images/snapshoot4.png" alt="work-snapshoot" />
               <img class="desktop" src="./images/Snapshoot-Portfolio-desktop-4.png" alt="work-snapshoot" />

@@ -6,7 +6,6 @@ body {
 }
 
 .container {
-  /* max-width: 768px; */
   min-width: 375px;
 }
 
@@ -19,8 +18,24 @@ body {
   padding: 0;
 }
 
+.header {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+}
+
+.header-wrapper {
+  position: fixed;
+  height: 80%;
+  margin-top: -5px;
+}
+
 .header-container {
+  position: fixed;
   display: flex;
+  background-color: white;
+  width: 100%;
   padding: 0.5rem;
   justify-content: space-between;
 }
@@ -57,10 +72,12 @@ a#logo:hover,
 a#logo:active {
   text-decoration: none;
   color: #6070ff;
+  cursor: pointer;
 }
 
 .main {
   background-color: #f7f7f9;
+  margin-top: 20px;
 }
 
 section.presentation {
@@ -76,7 +93,7 @@ section.presentation {
   flex-direction: column;
   height: 100%;
   background: url("../images/header-shapes-mobile@2x.svg") no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   width: 100%;
 }
 
@@ -151,6 +168,7 @@ section.presentation {
   display: flex;
   justify-content: flex-start;
   padding-inline-start: 0.1px;
+  align-items: baseline;
   gap: 1rem;
 }
 
@@ -165,6 +183,18 @@ ul li a {
   height: 2rem;
   width: 1.717rem;
   flex: 1 0 0;
+}
+
+.social-icon-list li {
+  display: flex;
+  align-items: flex-start;
+}
+
+.social-icon-list li a {
+  display: flex;
+  align-items: flex-end;
+  width: 20px;
+  height: 17px;
 }
 
 .work {
@@ -381,6 +411,7 @@ button.secondary {
   text-align: center;
   background-color: white;
   color: #6070ff;
+  cursor: pointer;
 }
 
 .action button {
@@ -396,31 +427,12 @@ button.secondary {
   padding: 12px 16px;
   width: 140px;
   height: 48px;
+  border: none;
   background: #fff;
   border-radius: 8px;
   font-weight: 500;
   font-size: 17px;
   line-height: 24px;
-}
-
-#getInTouch:hover,
-.action button:hover,
-button.secondary:hover {
-  background: #6070ff;
-  box-shadow: 0.1px 8px 16px rgba(64, 83, 252, 0.24);
-  color: #fff;
-}
-
-#getInTouch:active,
-.action button:active,
-button.secondary:active {
-  background: #2230d2;
-}
-
-#getInTouch:disabled,
-.action button:disabled,
-button.secondary:disabled {
-  color: #5e6c84;
 }
 
 .about {
@@ -704,6 +716,26 @@ button.normal-btn {
   display: none;
 }
 
+#getInTouch:hover,
+.action button:hover,
+button.secondary:hover {
+  background: #6070ff;
+  box-shadow: 0.1px 8px 16px rgba(64, 83, 252, 0.24);
+  color: #fff;
+}
+
+#getInTouch:active,
+.action button:active,
+button.secondary:active {
+  background: #2230d2;
+}
+
+#getInTouch:disabled,
+.action button:disabled,
+button.secondary:disabled {
+  color: #5e6c84;
+}
+
 @media screen and (min-width: 768px) {
   .header-container {
     padding: 25px 100px;
@@ -807,9 +839,9 @@ button.normal-btn {
   .lang-list li {
     width: 90%;
     height: auto;
-    flex: 0 1 0;
-    justify-content: flex-start;
+    flex: 0 1 90px;
     display: flex;
+    justify-content: flex-start;
     flex-direction: column;
   }
 
@@ -817,7 +849,7 @@ button.normal-btn {
   .lang-list li span {
     justify-content: center;
     align-items: center;
-    flex-grow: 0 1 0;
+    flex-grow: 0 1 auto;
   }
 
   .frame2 ul {

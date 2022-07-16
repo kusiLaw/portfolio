@@ -748,6 +748,7 @@ button.secondary:disabled {
 
 .social-icon-list li a img:hover {
   transform: scale(1.5);
+}
 
 @media screen and (min-width: 768px) {
   .header-container {

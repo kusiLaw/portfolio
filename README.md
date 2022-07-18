@@ -1,37 +1,45 @@
-#My Portfolio
+
+# My Portfolio
+This is a my portfolio web project. This is a project assigned by Microverse. The project as different sections which includes self presention, works and contact us form. 
 
 ### Built With
-Html<br />
-CSS
+- Html<br />
+- CSS
+   - Flexbox
+   - CSS grid
+
+### Live Demo
+[my-portfolio-live-demo-link](https://kusilaw.github.io/portfolio/)
 
 ### Getting Started 
 To get a local copy up and running follow these simple example steps
-<ul>
-   <li> Prerequisite:  
-        <ol>
-            <li>vscode editor</li> 
-            <li>a web browser(chrome, etc) </li>
-        </ol>
-   </li>
-   <li> <a href = "https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop">Clone </a> the repository to your local machine </>
-   <li>Open index.html file with chrome</li>
 
-</ul>
+#### Prerequisite:  
+  - Vscode editor 
+  - Knowldege About HTML / CSS Linters
+  - A web browser(chrome, etc)
+  - [Clone](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop ) the repository to your local machine
+  - Open index.html file with chrome
+
 
 ### Author
-<a href="https://github.com/kusiLaw">Github</a> \
-<a href="https://twitter.com/kusilaw">Twitter</a> \
-<a href="https://www.linkedin.com/in/lawrence-kusi-55a662104">Linkedin</a>
+- Lawrence Addai Kusi
+  - Github: [@Githubhandle](https://github.com/kusiLaw)
+  - Twitter: [@Twitterhandle](https://twitter.com/kusilaw)
+  - Linkedin: [Linkedin](https://www.linkedin.com/in/lawrence-kusi-55a662104)
 
 
-### Contributing
-Contributions, issues, and feature requests are welcome!
+### :handshake: Contributing
+Contributions, issues, and feature requests are welcome! 
 
-### Contributors
- - [Michael Asong]("https://github.com/michaelasong")
+Feel free to check the [issues page](https://github.com/kusiLaw/portfolio/issues).
+
+### Show your support
+Give a star :star: if you like this project!
+
 
 ### Acknowledgments
 Thanks to Microverse
 
-### License
+### 📝 License
 This Project is <a href ="https://opensource.org/licenses/MIT">MIT </a> licensed

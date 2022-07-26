@@ -1,5 +1,3 @@
-const btn = document.querySelector('#toggle-menu');
-
 function create_element(el, ids = "", cl = "") {
     let doc = document.createElement(el)
     
@@ -32,7 +30,7 @@ function create_menu() {
     // create individual li and aattact to ul
     for (let i = 0; i < content.length; i++) {
         li = create_element('li', "", 'js-nav-items')
-        a = create_element('a', "", 'nav-items-a')
+        a = create_element('a', content[i])
         a.setAttribute('href', inner_links[i] );
         a.textContent = content[i]
         li.appendChild(a)
@@ -49,34 +47,99 @@ function create_menu() {
 
     container.appendChild(toggle_img_container)
 
-    console.log(container)
+    // console.log(container)
     return container
 
 }
 
-function remove_menu(obj){
-    obj.remove()
-}
-
-function main() {
-    //hide menu
-    btn.style.display = "none"
-    // console.log(btn)
-    // const insert_place = document.querySelector('.main');
-
-    // document.body.appendChild(create_menu())
+function insert_to_page() {
     document.body.insertBefore(create_menu(), document.body.children[0])
 
-    // const mobile_menu_css = document.createElement('link');
-    // mobile_menu_css.setAttribute('rel', 'stylesheet');
-    // mobile_menu_css.setAttribute('href', './css/mobile_menu.css'); 
-    // document.head.appendChild(mobile_menu_css);
 }
 
-btn.addEventListener("click", main)
-let toggle_btn = document.querySelector('#nav-toggle')
-console.log('--------')
-console.log(toggle_btn)
-document.getElementById('nav-toggle').onclick = toggle_btn.remove(); // modify
+function remove_element(el){
+    el.remove()
+}
 
-// toggle_btn.addEventListener('click',document.body.removeChild(toggle_btn))
+
+
+btn = document.querySelector('#toggle-menu');
+btn.addEventListener("click", function(event){
+    this.style.display = "none";
+    insert_to_page();
+    let first_rem = document.body.firstElementChild
+    let img_close = document.getElementById('img-close')
+    // let click = true
+    event.stopPropagation()
+    
+    // if(!click) {
+    let links  = document.querySelector('.js_nav li');
+    img_close.addEventListener("click", function(){
+        // console.log(event.currentTarget)
+        remove_element(first_rem )
+        btn.style.display = "inline";
+        event.stopPropagation()
+
+    })
+    
+    document.querySelector('#Portfolio').addEventListener("click", function(){
+        remove_element(first_rem )
+        btn.style.display = "inline";
+        event.stopPropagation()
+    })
+   
+    document.querySelector('#About').addEventListener("click", function(){
+        remove_element(first_rem )
+        btn.style.display = "inline";
+        event.stopPropagation()
+    })
+    document.querySelector('#Contact').addEventListener("click", function(){
+        remove_element(first_rem )
+        btn.style.display = "inline";
+        event.stopPropagation()
+    })
+})
+
+
+function remove_element(el){
+    el.remove()
+}
+
+
+
+btn = document.querySelector('#toggle-menu');
+btn.addEventListener("click", function(event){
+    this.style.display = "none";
+    insert_to_page();
+    let first_rem = document.body.firstElementChild
+    let img_close = document.getElementById('img-close')
+    // let click = true
+    event.stopPropagation()
+    
+    // if(!click) {
+    let links  = document.querySelector('.js_nav li');
+    img_close.addEventListener("click", function(){
+        // console.log(event.currentTarget)
+        remove_element(first_rem )
+        btn.style.display = "inline";
+        event.stopPropagation()
+
+    })
+    
+    document.querySelector('#Portfolio').addEventListener("click", function(){
+        remove_element(first_rem )
+        btn.style.display = "inline";
+        event.stopPropagation()
+    })
+   
+    document.querySelector('#About').addEventListener("click", function(){
+        remove_element(first_rem )
+        btn.style.display = "inline";
+        event.stopPropagation()
+    })
+    document.querySelector('#Contact').addEventListener("click", function(){
+        remove_element(first_rem )
+        btn.style.display = "inline";
+        event.stopPropagation()
+    })
+})

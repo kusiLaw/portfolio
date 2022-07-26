@@ -15,21 +15,20 @@ function createMyMenu() {
   const container = createMyElement('div', 'nav-toggle');
 
   // create button
-  const toggle_btn_container = createMyElement('div', 'close-button-container');
-  const toggle_btn = createMyElement('img', 'img-close');
-  toggle_btn.setAttribute('src', './../images/x.svg');
-  toggle_btn_container.appendChild(toggle_btn);
-  container.appendChild(toggle_btn_container);
+  const toggleBtnContainer = createMyElement('div', 'close-button-container');
+  const toggleBtn = createMyElement('img', 'img-close');
+  toggleBtn.setAttribute('src', './../images/x.svg');
+  toggleBtnContainer.appendChild(toggleBtn);
+  container.appendChild(toggleBtnContainer);
 
   // create menu list
   const ul = createMyElement('ul', 'js_nav', 'js-nav');
-  let li; let
-    a;
+  let li;
+  let a;
   const content = ['Portfolio', 'About', 'Contact'];
   const innerLinks = ['#my-works', '#me', '#contact'];
-
   // create individual li and aattact to ul
-  for (let i = 0; i < content.length; i++) {
+  for (let i = 0; i < content.length; i += 1) {
     li = createMyElement('li', '', 'js-nav-items');
     a = createMyElement('a', content[i]);
     a.setAttribute('href', innerLinks[i]);
@@ -39,60 +38,58 @@ function createMyMenu() {
   }
   // add ul to container
   container.appendChild(ul);
-
   // create buttom img
-  const toggle_img_container = createMyElement('div', 'menu-img');
-  const toggle_img = createMyElement('img');
-  toggle_img.setAttribute('src', './../images/Shape.png');
-  toggle_img_container.appendChild(toggle_img);
+  const toggleImgContainer = createMyElement('div', 'menu-img');
+  const toggleImg = createMyElement('img');
+  toggleImg.setAttribute('src', './../images/Shape.png');
+  toggleImgContainer.appendChild(toggleImg);
 
-  container.appendChild(toggle_img_container);
+  container.appendChild(toggleImgContainer);
 
   // console.log(container)
   return container;
 }
 
-function insert_to_page() {
+function insertToPage() {
   document.body.insertBefore(createMyMenu(), document.body.children[0]);
 }
 
-function remove_element(el) {
+function removeFromPage(el) {
   el.remove();
 }
 
 const btn = document.querySelector('#toggle-menu');
-btn.addEventListener('click', function (event) {
-  this.style.display = 'none';
-  insert_to_page();
-  const first_rem = document.body.firstElementChild;
-  const img_close = document.getElementById('img-close');
+
+btn.addEventListener('click', (event) => {
+  const btnMob = document.querySelector('#toggle-menu');
+  btnMob.style.display = 'none';
+  insertToPage();
+  const firstToRemove = document.body.firstElementChild;
+  const closeImg = document.getElementById('img-close');
 
   event.stopPropagation();
-  const btn_mob = document.querySelector('#toggle-menu');
-  const links = document.querySelector('.js_nav li');
-
-  img_close.addEventListener('click', () => {
+  closeImg.addEventListener('click', () => {
     // console.log(event.currentTarget)
-    remove_element(first_rem);
-    btn_mob.style.display = 'inline';
+    removeFromPage(firstToRemove);
+    btnMob.style.display = 'inline';
     event.stopPropagation();
   });
 
   document.querySelector('#Portfolio').addEventListener('click', () => {
-    remove_element(first_rem);
-    btn_mob.style.display = 'inline';
+    removeFromPage(firstToRemove);
+    btnMob.style.display = 'inline';
     event.stopPropagation();
   });
 
   document.querySelector('#About').addEventListener('click', () => {
-    remove_element(first_rem);
-    btn_mob.style.display = 'inline';
+    removeFromPage(firstToRemove);
+    btnMob.style.display = 'inline';
     event.stopPropagation();
   });
 
   document.querySelector('#Contact').addEventListener('click', () => {
-    remove_element(first_rem);
-    btn_mob.style.display = 'inline';
+    removeFromPage(firstToRemove);
+    btnMob.style.display = 'inline';
     event.stopPropagation();
   });
 });

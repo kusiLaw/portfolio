@@ -76,7 +76,7 @@ a#logo:active {
 }
 
 .navigation button {
-  color: #6070FF;
+  color: #6070ff;
   width: 45px;
   height: 30px;
   border: none;
@@ -97,10 +97,9 @@ a#logo:active {
   justify-content: space-between;
   gap: 5px;
   display: flex;
-  flex-direction: column;
 }
 
-#close-button-container{
+#close-button-container {
   display: flex;
   justify-content: end;
 }
@@ -111,20 +110,18 @@ a#logo:active {
   font-size: 35px;
   font-weight: 700;
   width: 40px;
-  width: 40px
 }
 
-#menu-img{
+#menu-img {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#menu-img img{
+#menu-img img {
   width: 40%;
   margin-bottom: 5%;
 }
-
 
 #js_nav {
   /* position: fixed; */
@@ -145,7 +142,6 @@ li.js-nav-items {
   line-height: 44px;
   display: flex;
   align-items: center;
-  
 }
 
 li.js-nav-items a,
@@ -153,12 +149,7 @@ li.js-nav-items a:hover,
 li.js-nav-items a:active{
   text-decoration: none;
   color: white;
-  background-color: rgba(96, 112, 255, 0.9);
-
-}
-
-#close-close-button-container{
-  border: 2px solid red;
+  background-color: rgba(96, 112, 255, 0.9);  
 }
 
 #close-button {

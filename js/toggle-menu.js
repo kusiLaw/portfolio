@@ -1,0 +1,95 @@
+function createMyElement(el, ids = '', cl = '') {
+  const doc = document.createElement(el);
+
+  if (ids !== '') {
+    doc.id = ids;
+  }
+
+  if (cl !== '') {
+    doc.className = cl;
+  }
+  return doc;
+}
+
+function createMyMenu() {
+  const container = createMyElement('div', 'nav-toggle');
+
+  // create button
+  const toggleBtnContainer = createMyElement('div', 'close-button-container');
+  const toggleBtn = createMyElement('img', 'img-close');
+  toggleBtn.setAttribute('src', './../images/x.svg');
+  toggleBtnContainer.appendChild(toggleBtn);
+  container.appendChild(toggleBtnContainer);
+
+  // create menu list
+  const ul = createMyElement('ul', 'js_nav', 'js-nav');
+  let li;
+  let a;
+  const content = ['Portfolio', 'About', 'Contact'];
+  const innerLinks = ['#my-works', '#me', '#contact'];
+  // create individual li and aattact to ul
+  for (let i = 0; i < content.length; i += 1) {
+    li = createMyElement('li', '', 'js-nav-items');
+    a = createMyElement('a', content[i]);
+    a.setAttribute('href', innerLinks[i]);
+    a.textContent = content[i];
+    li.appendChild(a);
+    ul.appendChild(li);
+  }
+  // add ul to container
+  container.appendChild(ul);
+  // create buttom img
+  const toggleImgContainer = createMyElement('div', 'menu-img');
+  const toggleImg = createMyElement('img');
+  toggleImg.setAttribute('src', './../images/Shape.png');
+  toggleImgContainer.appendChild(toggleImg);
+
+  container.appendChild(toggleImgContainer);
+
+  // console.log(container)
+  return container;
+}
+
+function insertToPage() {
+  document.body.insertBefore(createMyMenu(), document.body.children[0]);
+}
+
+function removeFromPage(el) {
+  el.remove();
+}
+
+const btn = document.querySelector('#toggle-menu');
+
+btn.addEventListener('click', (event) => {
+  const btnMob = document.querySelector('#toggle-menu');
+  btnMob.style.display = 'none';
+  insertToPage();
+  const firstToRemove = document.body.firstElementChild;
+  const closeImg = document.getElementById('img-close');
+
+  event.stopPropagation();
+  closeImg.addEventListener('click', () => {
+    // console.log(event.currentTarget)
+    removeFromPage(firstToRemove);
+    btnMob.style.display = 'inline';
+    event.stopPropagation();
+  });
+
+  document.querySelector('#Portfolio').addEventListener('click', () => {
+    removeFromPage(firstToRemove);
+    btnMob.style.display = 'inline';
+    event.stopPropagation();
+  });
+
+  document.querySelector('#About').addEventListener('click', () => {
+    removeFromPage(firstToRemove);
+    btnMob.style.display = 'inline';
+    event.stopPropagation();
+  });
+
+  document.querySelector('#Contact').addEventListener('click', () => {
+    removeFromPage(firstToRemove);
+    btnMob.style.display = 'inline';
+    event.stopPropagation();
+  });
+});

@@ -1271,3 +1271,12 @@ button.secondary:active {
 button.secondary:disabled {
   color: #5e6c84;
 }
+
+/* form validation start */
+#error{
+  color: rgb(139, 13, 9);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}

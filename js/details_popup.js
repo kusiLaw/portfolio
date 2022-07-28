@@ -1,4 +1,4 @@
-let store = {
+const store = {
 
     desktop: {
         card1: {

@@ -394,7 +394,7 @@
         </div>
 
         <div class="contact-forms footer-items">
-          <form class="message-form" action="https://formspree.io/f/1" method="post">
+          <form class="message-form" id="contactForm" action="https://formspree.io/f/xaykwwqa" method="post">
             <ul>
               <li class="input-li">
                 <input type="text" name="text" id="text-input" placeholder="Yeremias" maxlength="30" required/>
@@ -405,8 +405,12 @@
               <li class="text-area-li">
                 <textarea name="msg" id="msg" maxlength="500" required placeholder="Write your messages here"></textarea>
               </li>
+              
               <li class="submit-li">
                 <button type="submit" id="getInTouch">Get in touch</button>
+              </li>
+              <li class="text-area-li">
+                <span id="error"></span>
               </li>
             </ul>
           </form>
@@ -419,5 +423,7 @@
     </div>
 
     <script src="./js/toggle-menu.js"></script>
-    <script src="./js/details_popup.js"></script>  </body>
+    <script src="./js/details_popup.js"></script> 
+    <script src="./js/form_validation.js"></script> 
+   </body>
 </html>

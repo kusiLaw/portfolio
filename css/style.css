@@ -1273,9 +1273,9 @@ button.secondary:disabled {
 }
 
 /* form validation start */
-#error{
+#error {
   color: rgb(139, 13, 9);
-  font-size: 1.5rem;
+  font-size: 18px;
   display: flex;
   justify-content: center;
   text-align: center;

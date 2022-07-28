@@ -46,7 +46,7 @@ function createMyMenu() {
 
   container.appendChild(toggleImgContainer);
 
-//   console.log(container)
+  //   console.log(container)
   return container;
 }
 

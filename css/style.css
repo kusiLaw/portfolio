@@ -870,8 +870,8 @@ div#primaryText {
   display: flex;
   height: 30px;
   width: 60%;
-  min-width: 286px;
-  max-width: 300px;
+  min-width: 300px;
+  max-width: 400px;
 }
 
 #ul-list li {
@@ -1244,6 +1244,7 @@ div#primaryText {
     height: 90%;
     width: 70%;
   }
+
 }
 
 #action-button-source-link:hover,

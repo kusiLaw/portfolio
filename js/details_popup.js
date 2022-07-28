@@ -383,5 +383,57 @@ document.querySelector('#seeProjectMC4').addEventListener('click', (event) => {
         event.stopPropagation();
          });
 });
+ 
+document.querySelector('#seeProjectDC1').addEventListener('click', (event) => {
+    plugTOParent()
+    populateContent(store.desktop, store.desktop.card1)
+    document.querySelector('#cardContainer').style.display = "flex"
+    event.stopPropagation();
+
+    document.querySelector('#img-close').addEventListener('click', (event) => {
+        document.querySelector('#cardContainer').remove()
+        event.stopPropagation();
+         });
+
+  });
+
+document.querySelector('#seeProjectDC2').addEventListener('click', (event) => {
+    plugTOParent()
+    populateContent(store.desktop, store.desktop.card2)
+    document.querySelector('#cardContainer').style.display = "flex"
+    event.stopPropagation();
+
+    document.querySelector('#img-close').addEventListener('click', (event) => {
+        document.querySelector('#cardContainer').remove()
+        event.stopPropagation();
+         });
+});
+
+document.querySelector('#seeProjectDC3').addEventListener('click', (event) => {
+    plugTOParent()
+    populateContent(store.desktop, store.desktop.card3)
+    document.querySelector('#cardContainer').style.display = "flex"
+    event.stopPropagation();
+
+    document.querySelector('#img-close').addEventListener('click', (event) => {
+        document.querySelector('#cardContainer').remove()
+        event.stopPropagation();
+         });
+});
+
+document.querySelector('#seeProjectDC4').addEventListener('click', (event) => {
+    plugTOParent()
+    populateContent(store.desktop, store.desktop.card4)
+    document.querySelector('#cardContainer').style.display = "flex"
+    event.stopPropagation();
+
+    document.querySelector('#img-close').addEventListener('click', (event) => {
+        document.querySelector('#cardContainer').remove()
+        event.stopPropagation();
+         });
+});
+
+
+
 
 

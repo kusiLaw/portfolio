@@ -61,35 +61,43 @@ function removeFromPage(el) {
 const btn = document.querySelector('#toggle-menu');
 
 btn.addEventListener('click', (event) => {
-  const btnMob = document.querySelector('#toggle-menu');
-  btnMob.style.display = 'none';
+  // const btnMob = document.querySelector('#toggle-menu');
+  btn.style.visibility = 'hidden';
   insertToPage();
   const firstToRemove = document.body.firstElementChild;
   const closeImg = document.getElementById('img-close');
 
   event.stopPropagation();
   closeImg.addEventListener('click', () => {
-    // console.log(event.currentTarget)
+    btn.style.visibility = 'visible';
     removeFromPage(firstToRemove);
-    btnMob.style.display = 'inline';
+    // btnMob.style.display = 'inline';
+
     event.stopPropagation();
   });
 
   document.querySelector('#Portfolio').addEventListener('click', () => {
     removeFromPage(firstToRemove);
-    btnMob.style.display = 'inline';
+    // btnMob.style.display = 'inline';
+    btn.style.visibility = 'visible';
     event.stopPropagation();
   });
 
   document.querySelector('#About').addEventListener('click', () => {
     removeFromPage(firstToRemove);
-    btnMob.style.display = 'inline';
+    // btnMob.style.display = 'inline';
+    btn.style.visibility = 'visible';
     event.stopPropagation();
   });
 
   document.querySelector('#Contact').addEventListener('click', () => {
     removeFromPage(firstToRemove);
-    btnMob.style.display = 'inline';
+    // btnMob.style.display = 'inline';
+    btn.style.visibility = 'visible';
     event.stopPropagation();
   });
 });
+
+// window.addEventListener("resize", () =>{
+//   console.log("draging")
+// })

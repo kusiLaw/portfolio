@@ -18,3 +18,37 @@ form.addEventListener('submit', (event) => {
     form.querySelector('#error').innerHTML = emailErrorMsg;
   }
 });
+
+/// / local storage /////
+let localData = {};
+const userNames = form.elements['text-input'];
+
+function populateObject(data, value) {
+  localData[data] = value;
+}
+
+function populateLocalStorage() {
+  localStorage.setItem('data', JSON.stringify(localData));
+}
+
+function populateFormFromStorage() {
+  if (localStorage.getItem('data')) {
+    // data in storage
+    // convert to js object
+    localData = JSON.parse(localStorage.getItem('data'));
+    email.value = localData.email;
+    userNames.value = localData.userName;
+  }
+}
+
+email.addEventListener('focusout', () => {
+  populateObject('email', email.value);
+  populateLocalStorage();
+});
+
+userNames.addEventListener('focusout', () => {
+  populateObject('userName', userNames.value);
+  populateLocalStorage();
+});
+
+document.body.onload = populateFormFromStorage();

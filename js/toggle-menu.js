@@ -61,8 +61,8 @@ function removeFromPage(el) {
 const btn = document.querySelector('#toggle-menu');
 
 btn.addEventListener('click', (event) => {
-  const btnMob = document.querySelector('#toggle-menu');
-  btn.style.visibility = 'hidden'; 
+  // const btnMob = document.querySelector('#toggle-menu');
+  btn.style.visibility = 'hidden';
   insertToPage();
   const firstToRemove = document.body.firstElementChild;
   const closeImg = document.getElementById('img-close');
@@ -72,7 +72,6 @@ btn.addEventListener('click', (event) => {
     btn.style.visibility = 'visible';
     removeFromPage(firstToRemove);
     // btnMob.style.display = 'inline';
-    
 
     event.stopPropagation();
   });

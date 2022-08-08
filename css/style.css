@@ -823,6 +823,7 @@ div#cardContainer {
   z-index: 100;
   width: 95%;
   height: 98%;
+  overflow: scroll;
   background-color: white;
   padding: 20px;
   margin: 2.5%;

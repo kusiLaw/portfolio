@@ -188,7 +188,7 @@ function createSkeletonElementStructure() {
   cardContainer.appendChild(leftBlockDescriptions);
   // cardContainer.appendChild(action)
 
-  //   console.log(cardContainer);
+    console.log(cardContainer);
   return cardContainer;
 }
 

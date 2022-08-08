@@ -18,3 +18,10 @@ form.addEventListener('submit', (event) => {
     form.querySelector('#error').innerHTML = emailErrorMsg;
   }
 });
+
+//// local storage /////
+let localData = {}
+email.addEventListener('focusout', (event)=>{
+  localData['email'] = email.value
+  console.log(localData)
+})

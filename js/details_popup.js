@@ -2,25 +2,31 @@ const store = {
 
   desktop: {
     card1: {
-      topic: 'Tonic',
+      topic: 'To Do List',
       technologies: ['html', 'css', 'javaScript'],
       technologiesLiCls: ['tag', 'tag', 'tag'],
-      image: './images/Snapshoot-Portfolio-desktop-1.png',
+      image: './images/todolistpopup.png',
       feature: ['Canopy', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2022'],
       featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
-      live: 'https://kusilaw.github.io/portfolio/',
-      source: 'https://github.com/kusiLaw',
+      live: 'https://kusilaw.github.io/To-Do-List/',
+      source: 'https://github.com/kusiLaw/To-Do-List',
+      description:' A simple project that allows users to track their daily activities.' 
+      + 'Items on the list can be marked as completed, can be re-arrange using drag and drop,' 
+     + 'delete individual tasks or delete all tasks marked as completed'
+   
     },
 
     card2: {
-      topic: 'Multi-Post Stories',
+      topic: 'Web Dev Courses',
       technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
       technologiesLiCls: ['tag', 'tag', 'tag', 'tag'],
-      image: './images/Snapshoot-Portfolio-desktop-2.png',
+      image: './images/webdevl.png',
       feature: ['FACEBOOK', './images/Counter.png', 'Full Stack Dev', './images/Counter.png', '2022'],
       featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
-      live: 'https://kusilaw.github.io/portfolio/',
-      source: 'https://github.com/kusiLaw',
+      live: 'https://kusilaw.github.io/web-dev-course/',
+      source: 'https://github.com/kusiLaw/web-dev-course',
+      description:'A simple demo web development website that allows users to sing up to a course.'
+      + 'For demonstration purposes, only the home and about section has been fully implemented on different screen sizes'
     },
 
     card3: {
@@ -49,25 +55,30 @@ const store = {
 
   mobile: {
     card1: {
-      topic: 'Tonic',
+      topic: 'To Do List',
       technologies: ['html', 'css', 'javaScript'],
       technologiesLiCls: ['tag', 'tag', 'tag'],
-      image: './images/Snapshoot.png',
+      image: './images/todolistpopup.png',
       feature: ['Canopy', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2022'],
       featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
       live: 'https://kusilaw.github.io/portfolio/',
       source: 'https://github.com/kusiLaw',
+      description:' A simple project that allows users to track their daily activities.' 
+       + 'Items on the list can be marked as completed, can be re-arrange using drag and drop,' 
+      + 'delete individual tasks or delete all tasks marked as completed'
     },
 
     card2: {
-      topic: 'Multi-Post Stories',
-      technologies: ['html', 'css', 'javaScript'],
+     topic: 'Web Dev Courses',
+     technologies: ['html', 'css', 'javaScript'],
       technologiesLiCls: ['tag', 'tag', 'tag'],
-      image: './images/snapshoot2.png',
+      image: './images/webdevl.png',
       feature: ['Canopy', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2022'],
       featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
       live: 'https://kusilaw.github.io/portfolio/',
       source: 'https://github.com/kusiLaw',
+      description:'A simple demo web development website that allows users to sing up to a course.'
+      + 'For demonstration purposes, only the home and about section has been fully implemented on different screen sizes'
     },
 
     card3: {
@@ -235,7 +246,7 @@ function populateContent(desktopMobversion = null,
   generateUlList(getDoc('#ul-list'), cardNo.featureLiCls, cardNo.feature);
 
   // add description
-  getDoc('#primaryTextOfTextP').textContent = store.description;
+  getDoc('#primaryTextOfTextP').textContent = cardNo.description;
 
   generateUlList(getDoc('#tagsUl'), cardNo.technologiesLiCls, cardNo.technologies);
 

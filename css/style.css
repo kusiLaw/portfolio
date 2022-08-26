@@ -931,6 +931,7 @@ div#primaryText {
   display: flex;
   flex-direction: column;
   gap: 3%;
+  margin: auto;
 }
 
 #primaryTextOfText {
@@ -938,7 +939,8 @@ div#primaryText {
   font-size: 15px;
   line-height: 24px;
   overflow: hidden;
-  height: 65%;
+  /* height: 65%; */
+  height: auto;
   flex-grow: 0;
   flex-shrink: 2;
 }
@@ -1225,6 +1227,7 @@ div#primaryText {
     display: flex;
     flex-direction: row;
     height: 30%;
+    margin: auto;
   }
 
   #actionbtn.action {
@@ -1242,9 +1245,19 @@ div#primaryText {
   }
 
   #primaryTextOfText {
+   display: flex;
+   align-content: center;
+    height: 90%;
+    width: 70%;
+    padding: auto;
+  }
+  #primaryTextOfTextP {
+   align-self: center;
+   align-content: center;
     height: 90%;
     width: 70%;
   }
+
 }
 
 #action-button-source-link:hover,

@@ -10,10 +10,9 @@ const store = {
       featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
       live: 'https://kusilaw.github.io/To-Do-List/',
       source: 'https://github.com/kusiLaw/To-Do-List',
-      description:' A simple project that allows users to track their daily activities.' 
-      + 'Items on the list can be marked as completed, can be re-arrange using drag and drop,' 
-     + 'delete individual tasks or delete all tasks marked as completed'
-   
+      description: ' A simple project that allows users to track their daily activities.'
+      + 'Items on the list can be marked as completed, can be re-arrange using drag and drop,'
+     + 'delete individual tasks or delete all tasks marked as completed',
     },
 
     card2: {
@@ -25,8 +24,8 @@ const store = {
       featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
       live: 'https://kusilaw.github.io/web-dev-course/',
       source: 'https://github.com/kusiLaw/web-dev-course',
-      description:'A simple demo web development website that allows users to sing up to a course.'
-      + 'For demonstration purposes, only the home and about section has been fully implemented on different screen sizes'
+      description: 'A simple demo web development website that allows users to sing up to a course.'
+      + 'For demonstration purposes, only the home and about section has been fully implemented on different screen sizes',
     },
 
     card3: {
@@ -63,22 +62,22 @@ const store = {
       featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
       live: 'https://kusilaw.github.io/portfolio/',
       source: 'https://github.com/kusiLaw',
-      description:' A simple project that allows users to track their daily activities.' 
-       + 'Items on the list can be marked as completed, can be re-arrange using drag and drop,' 
-      + 'delete individual tasks or delete all tasks marked as completed'
+      description: ' A simple project that allows users to track their daily activities.'
+       + 'Items on the list can be marked as completed, can be re-arrange using drag and drop,'
+      + 'delete individual tasks or delete all tasks marked as completed',
     },
 
     card2: {
-     topic: 'Web Dev Courses',
-     technologies: ['html', 'css', 'javaScript'],
+      topic: 'Web Dev Courses',
+      technologies: ['html', 'css', 'javaScript'],
       technologiesLiCls: ['tag', 'tag', 'tag'],
       image: './images/webdevl.png',
       feature: ['Canopy', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2022'],
       featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
       live: 'https://kusilaw.github.io/portfolio/',
       source: 'https://github.com/kusiLaw',
-      description:'A simple demo web development website that allows users to sing up to a course.'
-      + 'For demonstration purposes, only the home and about section has been fully implemented on different screen sizes'
+      description: 'A simple demo web development website that allows users to sing up to a course.'
+      + 'For demonstration purposes, only the home and about section has been fully implemented on different screen sizes',
     },
 
     card3: {

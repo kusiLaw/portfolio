@@ -939,6 +939,7 @@ div#primaryText {
   font-size: 15px;
   line-height: 24px;
   overflow: hidden;
+
   /* height: 65%; */
   height: auto;
   flex-grow: 0;
@@ -1245,19 +1246,12 @@ div#primaryText {
   }
 
   #primaryTextOfText {
-   display: flex;
-   align-content: center;
+    display: flex;
+    align-content: center;
     height: 90%;
     width: 70%;
     padding: auto;
   }
-  #primaryTextOfTextP {
-   align-self: center;
-   align-content: center;
-    height: 90%;
-    width: 70%;
-  }
-
 }
 
 #action-button-source-link:hover,

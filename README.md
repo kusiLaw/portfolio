@@ -5,6 +5,9 @@ This is my portfolio web project. It is my first project assigned by Microverse.
 
 Self-presentation is a welcoming section where visitors can easily find bio information and social media links. The project section also provides a template to display your work. In addition, the about section displays the technology toolset, including language, frameworks, and libraries. Lastly, the footer section has a contact form where visitors can reach out to you. built using javascript.
 
+![Screenshot from 2022-09-02 09-31-02](https://user-images.githubusercontent.com/52538840/188110483-8f37bff1-6b06-4962-8b12-02b4affb23ee.png)
+
+
 ### Built With
 - Html<br />
 - CSS

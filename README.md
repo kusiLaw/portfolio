@@ -1,8 +1,9 @@
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # My Portfolio
-This is my portfolio web project. It is my first project assigned by Microverse. The project has different sections which include self-presentation, projects, about, and contact us form built using javascript.
+This is my portfolio web project. It is my first project assigned by Microverse. The project has different sections which include self-presentation, projects, about, and contact us form.
 
-Self-presentation is a welcoming section where visitors can easily find bio information and social media links. The project section also provides a template to display your work. in addition, the about section displays the technology toolset, including language, frameworks, and libraries. Lastly, footer section has a contact form where visitor can reach out to you
+Self-presentation is a welcoming section where visitors can easily find bio information and social media links. The project section also provides a template to display your work. in addition, the about section displays the technology toolset, including language, frameworks, and libraries. Lastly, footer section has a contact form where visitor can reach out to you. built using javascript.
 
 ### Built With
 - Html<br />

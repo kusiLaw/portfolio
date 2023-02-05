@@ -17,7 +17,7 @@ function createMyMenu() {
   // create button
   const toggleBtnContainer = createMyElement('div', 'close-button-container');
   const toggleBtn = createMyElement('img', 'img-close');
-  toggleBtn.setAttribute('src', './../images/x.svg');
+  toggleBtn.setAttribute('src', './images/x.svg');
   toggleBtnContainer.appendChild(toggleBtn);
   container.appendChild(toggleBtnContainer);
 
@@ -41,7 +41,7 @@ function createMyMenu() {
   // create buttom img
   const toggleImgContainer = createMyElement('div', 'menu-img');
   const toggleImg = createMyElement('img');
-  toggleImg.setAttribute('src', './../images/Shape.png');
+  toggleImg.setAttribute('src', './images/Shape.png');
   toggleImgContainer.appendChild(toggleImg);
 
   container.appendChild(toggleImgContainer);

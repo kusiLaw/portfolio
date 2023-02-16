@@ -23,6 +23,7 @@ body {
   width: 100%;
   height: 70px;
   background-color: white;
+  font-size: 62.5%;
 }
 
 .header-wrapper {
@@ -42,8 +43,10 @@ body {
 
 .header-items {
   flex-grow: 0;
+  font-size: 1.6rem;
   align-items: baseline;
 }
+
 
 .logo-box {
   display: flex;
@@ -52,7 +55,7 @@ body {
 }
 
 .logo-box span {
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 2rem;
   text-align: center;
@@ -94,8 +97,9 @@ a#logo:active {
 section.presentation {
   background-color: rgb(255, 255, 255);
   border-bottom-left-radius: 70px;
-  height: 600px;
+  height:90vh;
   display: flex;
+  font-size: 62.5%;
   flex-direction: column;
 }
 
@@ -106,14 +110,16 @@ section.presentation {
   background: url("../images/header-shapes-mobile@2x.svg") no-repeat;
   background-size: 100% 100%;
   width: 100%;
+  padding: 1rem;
 }
 
 .text-wrapper {
   display: flex;
   flex-direction: column;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  width: auto;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  font-size: 1.6rem;
 }
 
 .text {
@@ -125,11 +131,9 @@ section.presentation {
 }
 
 .text-primary {
-  top: 14em;
-  height: 15rem;
-  font-weight: bold;
-  font-size: 2.5rem;
-  line-height: 2.5rem;
+  /* font-weight: bold; */
+  font-size: 2rem;
+  line-height: 2.4rem;
   display: flex;
   align-items: flex-end;
   color: #172b4d;
@@ -139,8 +143,7 @@ section.presentation {
 
 .text-secondry {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
   color: #344563;
   text-align: left;
   justify-content: flex-start;
@@ -151,32 +154,30 @@ section.presentation {
 .social {
   display: flex;
   flex-direction: column;
+  font-size: 1rem;
   gap: 1.2rem;
+  margin-top: 1rem;
 }
 
 .social-items {
   justify-content: space-between;
   align-items: flex-start;
   transition: color 2s;
+  font-size: 1.3rem;
 }
 
 .social-items:hover {
-  font-size: 20px;
+  font-size: 1.4rem;
 }
 
 .social-header,
 .supporting-text h2 {
   font-weight: 500;
-  font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
   flex: none;
   flex-grow: 0;
   transition: color 2s;
-}
-
-.social-header:hover {
-  color: pink;
 }
 
 .social-icons {
@@ -383,7 +384,7 @@ li.counter {
 .primary-text_text p {
   line-height: 24px;
   color: #344563;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 400;
   text-align: left;
 }
@@ -401,7 +402,7 @@ li.counter {
 
 .tags ul li {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 16px;
   letter-spacing: 0.03em;
   color: #6070ff;
@@ -475,7 +476,7 @@ button.secondary {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px;
+  gap: 18px;
   width: 100%;
   height: auto;
   padding-bottom: 24px;
@@ -501,7 +502,7 @@ button.secondary {
   justify-content: center;
   height: auto;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 24px;
   color: #344563;
   flex-grow: 0;
@@ -545,63 +546,63 @@ button.secondary {
   align-content: center;
   width: 100%;
   height: auto;
-  padding: 24px;
+  padding: 7px;
 }
 
 .frame7 h3,
 .language span {
-  height: 24px;
+  /* height: 24px; */
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
   color: #000;
 }
 
+.frame7 h3{
+ font-weight: 800;
+ font-size: 20px;
+ color:#172b4d
+}
+
 .lang-list {
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: center;
-  padding: 12px;
-  gap: 12px;
+  align-items: center;
+  padding:  4px;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  gap: 5%;
   width: 100%;
-  height: 100%;
-  flex: none;
+   margin-bottom: 10px;
 }
 
-.frame9,
-.frame10,
-.frame11 {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  height: 66.72px;
-  background: #f7f7f9;
-  border-radius: 8px;
-  gap: 16px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+.shrink{
+ flex-shrink: 4;
 }
+
+.lang-list li{
+  display: flex;
+  width: 45%;
+  min-width: 130px;
+  padding: 5px;
+  border-radius: 8px;
+ 
+}
+
+.lang-list.list-skills li{
+ width: 100%;
+ flex: 1 0 100%;
+}
+
 
 .lang {
-  height: 24px;
+ 
   font-weight: 500;
-  font-size: 15px;
+  font-size: 18px;
   line-height: 20px;
   margin-top: 2px;
-  color: #253858;
-}
-
-.frame9 img,
-.frame10 img,
-.frame11 img {
-  width: 48px;
-  height: 48px;
-  margin-left: 12px;
-  border: 1px solid #fff;
-}
+  color: #6070ff;
+  display: block;
+} 
 
 .framework {
   width: 100%;
@@ -994,7 +995,10 @@ div#primaryText {
 
 @media screen and (min-width: 768px) {
   .header-container {
-    padding: 25px 100px;
+    padding: 18px 100px;
+  }
+  .navigation{
+    width: auto;
   }
 
   .navigation ul {
@@ -1002,7 +1006,7 @@ div#primaryText {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 4rem;
     width: 259px;
     height: 40px;
   }
@@ -1013,9 +1017,9 @@ div#primaryText {
     justify-content: center;
     text-align: center;
     color: #344563;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
+    /* font-weight: 500; */
+    font-size: 1rem;
+    /* line-height: 20px; */
   }
 
   #action-button-source-link,
@@ -1032,9 +1036,6 @@ div#primaryText {
   }
 
   .presentation-content {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
     background: url("../images/Header-bg.svg") no-repeat;
     background-size: 100% 100%;
     width: 100%;
@@ -1043,7 +1044,23 @@ div#primaryText {
 
   .text-wrapper {
     width: 70%;
+    padding-left: 1rem;
   }
+
+  .text-primary {
+   /* font-weight: bold; */
+   font-size: 2.4rem;
+   line-height: 2.5rem;
+ }
+ 
+ .text-secondry {
+   font-weight: 400;
+   font-size: 1.1rem;
+ }
+ 
+ .social {
+  font-size: 1.3rem;
+}
 
   .work {
     padding: 10%;
@@ -1095,12 +1112,13 @@ div#primaryText {
   }
 
   .lang-list li {
-    width: 90%;
-    height: auto;
-    flex: 0 1 90px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+    width: 45%;
+  
+    /* height: auto; */
+    flex: 0 3 auto;
+    /* display: flex; */
+    /* justify-content: flex-start;
+    flex-direction: column; */
   }
 
   .lang-list li img,
@@ -1294,4 +1312,8 @@ button.secondary:disabled {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+.hide{
+ display: none;
 }

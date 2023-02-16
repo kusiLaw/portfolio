@@ -101,3 +101,33 @@ btn.addEventListener('click', (event) => {
 // window.addEventListener("resize", () =>{
 //   console.log("draging")
 // })
+
+{/* <button type="button" class="normal-btn" id="btn-language"> */}
+const btn_language = document.querySelector('#btn-language');
+
+btn_language.addEventListener('click', (event) => {
+
+   document.querySelector('.lang-list').classList.toggle('hide')
+   btn_language.firstElementChild.classList.toggle('hide')
+   btn_language.lastElementChild.classList.toggle('hide')
+})
+
+
+const btn_framework = document.querySelector('#btn-framework');
+
+btn_framework.addEventListener('click', (event) => {
+
+   document.querySelector('.list-framework').classList.toggle('hide')
+   btn_framework.firstElementChild.classList.toggle('hide')
+   btn_framework.lastElementChild.classList.toggle('hide')
+})
+
+
+const btn_skills = document.querySelector('#btn-skills');
+
+btn_skills.addEventListener('click', (event) => {
+
+   document.querySelector('.list-skills').classList.toggle('hide')
+   btn_skills.firstElementChild.classList.toggle('hide')
+   btn_skills.lastElementChild.classList.toggle('hide')
+})

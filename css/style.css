@@ -96,7 +96,7 @@ a#logo:active {
 section.presentation {
   background-color: rgb(255, 255, 255);
   border-bottom-left-radius: 70px;
-  height: 65vh;
+  height: 95vh;
   display: flex;
   font-size: 62.5%;
   flex-direction: column;

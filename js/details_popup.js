@@ -5,14 +5,14 @@ const store = {
       topic: 'To Do List',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       technologiesLiCls: ['tag', 'tag', 'tag'],
-      image: './images/todolistpopup.png',
+      image: './images/recipe.png',
       feature: ['Microverse', './images/Counter.png', 'Front End Dev', './images/Counter.png', '2022'],
       featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
       live: 'https://kusilaw.github.io/To-Do-List/',
       source: 'https://github.com/kusiLaw/To-Do-List',
-      description: ' A simple project that allows users to track their daily activities.'
-      + 'Items on the list can be marked as completed, can be re-arrange using drag and drop,'
-     + 'delete individual tasks, or delete all items marked as completed',
+      description: 'Food Recipe is a capstone project app that displays food recipes for a restaurant using APIs.'
+      + 'Users can leave comments, like, and make reservations.',
+
     },
 
     card2: {
@@ -57,19 +57,6 @@ const store = {
   },
 
   mobile: {
-    card1: {
-      topic: 'To Do List',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      technologiesLiCls: ['tag', 'tag', 'tag'],
-      image: './images/todolistpopup.png',
-      feature: ['Microverse', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2022'],
-      featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
-      live: 'https://kusilaw.github.io/To-Do-List/',
-      source: 'https://github.com/kusiLaw/To-Do-List',
-      description: ' A simple project that allows users to track their daily activities.'
-       + 'Items on the list can be marked as completed, can be re-arrange using drag and drop,'
-      + 'delete individual tasks, or delete all tasks marked as completed',
-    },
 
     card2: {
       topic: 'Web Dev Courses',
@@ -83,39 +70,7 @@ const store = {
       description: 'A simple demo web development website that allows users to sing up to a course.'
       + 'For demonstration purposes, only the home and about section has been fully implemented on different screen sizes',
     },
-
-    card3: {
-      topic: 'Tonic',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      technologiesLiCls: ['tag', 'tag', 'tag'],
-      image: './images/snapshoot3.png',
-      feature: ['Canopy', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2022'],
-      featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
-      live: 'https://kusilaw.github.io/portfolio/',
-      source: 'https://github.com/kusiLaw',
-    },
-
-    card4: {
-      topic: 'Multi-Post Stories',
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      technologiesLiCls: ['tag', 'tag', 'tag'],
-      image: './images/snapshoot4.png',
-      feature: ['Canopy', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2022'],
-      featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
-      live: 'https://kusilaw.github.io/portfolio/',
-      source: 'https://github.com/kusiLaw',
-    },
-
   },
-
-  description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry'
-           + "Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown"
-           + 'printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text '
-           + "of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-            + 'when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry.'
-             + 'Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem '
-            + "Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard"
-            + 'dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
 };
 
 function createMyElement(el, ids = '', cl = '') {
@@ -308,7 +263,7 @@ document.querySelector('#seeProjectMC3').addEventListener('click', (event) => {
 
 document.querySelector('#seeProjectMC4').addEventListener('click', (event) => {
   plugTOParent();
-  populateContent(store.mobile, store.mobile.card1);
+  populateContent(store.desktop, store.desktop.card1);
   document.querySelector('#cardContainer').style.display = 'flex';
   event.stopPropagation();
 

@@ -98,14 +98,9 @@ btn.addEventListener('click', (event) => {
   });
 });
 
-// window.addEventListener("resize", () =>{
-//   console.log("draging")
-// })
-
-{ /* <button type="button" class="normal-btn" id="btn-language"> */ }
 const btnLanguage = document.querySelector('#btn-language');
 
-btnLanguage.addEventListener('click', (event) => {
+btnLanguage.addEventListener('click', () => {
   document.querySelector('.lang-list').classList.toggle('hide');
   btnLanguage.firstElementChild.classList.toggle('hide');
   btnLanguage.lastElementChild.classList.toggle('hide');
@@ -113,7 +108,7 @@ btnLanguage.addEventListener('click', (event) => {
 
 const btnFramework = document.querySelector('#btn-framework');
 
-btnFramework.addEventListener('click', (event) => {
+btnFramework.addEventListener('click', () => {
   document.querySelector('.list-framework').classList.toggle('hide');
   btnFramework.firstElementChild.classList.toggle('hide');
   btnFramework.lastElementChild.classList.toggle('hide');
@@ -121,7 +116,7 @@ btnFramework.addEventListener('click', (event) => {
 
 const btnSkills = document.querySelector('#btn-skills');
 
-btnSkills.addEventListener('click', (event) => {
+btnSkills.addEventListener('click', () => {
   document.querySelector('.list-skills').classList.toggle('hide');
   btnSkills.firstElementChild.classList.toggle('hide');
   btnSkills.lastElementChild.classList.toggle('hide');

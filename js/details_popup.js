@@ -3,21 +3,21 @@ const store = {
   desktop: {
     card1: {
       topic: 'To Do List',
-      technologies: ['html', 'css', 'javaScript'],
+      technologies: ['HTML', 'CSS', 'JavaScript'],
       technologiesLiCls: ['tag', 'tag', 'tag'],
       image: './images/todolistpopup.png',
-      feature: ['Canopy', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2022'],
+      feature: ['Microverse', './images/Counter.png', 'Front End Dev', './images/Counter.png', '2022'],
       featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
       live: 'https://kusilaw.github.io/To-Do-List/',
       source: 'https://github.com/kusiLaw/To-Do-List',
       description: ' A simple project that allows users to track their daily activities.'
       + 'Items on the list can be marked as completed, can be re-arrange using drag and drop,'
-     + 'delete individual tasks or delete all tasks marked as completed',
+     + 'delete individual tasks, or delete all items marked as completed',
     },
 
     card2: {
       topic: 'Web Dev Courses',
-      technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
+      technologies: ['HTML', 'Rails', 'CSS', 'JavaScript'],
       technologiesLiCls: ['tag', 'tag', 'tag', 'tag'],
       image: './images/webdevl.png',
       feature: ['FACEBOOK', './images/Counter.png', 'Full Stack Dev', './images/Counter.png', '2022'],
@@ -29,25 +29,29 @@ const store = {
     },
 
     card3: {
-      topic: 'Facebook 360',
-      technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
+      topic: 'Countries Fact',
+      technologies: ['React', 'CSS', 'JavaScript'],
       technologiesLiCls: ['tag', 'tag', 'tag', 'tag'],
-      image: './images/Snapshoot-Portfolio-desktop-3.png',
-      feature: ['FACEBOOK', './images/Counter.png', 'Full Stack Dev', './images/Counter.png', '2022'],
+      image: './images/contry_fact.png',
+      feature: ['Web', './images/Counter.png', 'Full Stack Dev', './images/Counter.png', '2022'],
       featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
-      live: 'https://kusilaw.github.io/portfolio/',
-      source: 'https://github.com/kusiLaw',
+      live: 'https://mellifluous-begonia-3df97c.netlify.app/',
+      source: 'https://github.com/kusiLaw/countries_information',
+      description: ' Countries Information is a simple react capstone project, that displays information about each country around the world.'
+     + 'Users can sort the countries according to continents. Built with React.',
     },
 
     card4: {
-      topic: 'Uber Navigation',
-      technologies: ['html', 'Ruby on rails', 'css', 'javaScript'],
+      topic: 'Budget App',
+      technologies: ['Rails', 'CSS', 'HTML'],
       technologiesLiCls: ['tag', 'tag', 'tag', 'tag'],
-      image: './images/Snapshoot-Portfolio-desktop-4.png',
-      feature: ['Uber', './images/Counter.png', 'Load Developer', './images/Counter.png', '2022'],
+      image: './images/budget.png',
+      feature: ['Microverse', './images/Counter.png', 'Full Stack Dev', './images/Counter.png', '2022'],
       featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
-      live: 'https://kusilaw.github.io/portfolio/',
-      source: 'https://github.com/kusiLaw',
+      live: 'https://budgisee.onrender.com/',
+      source: 'https://github.com/kusiLaw/budget_app',
+      description: 'A simple demo web development website that allows users to sing up to a course.'
+     + 'For demonstration purposes, only the home and about section has been fully implemented on different screen sizes',
     },
 
   },
@@ -55,21 +59,21 @@ const store = {
   mobile: {
     card1: {
       topic: 'To Do List',
-      technologies: ['html', 'css', 'javaScript'],
+      technologies: ['HTML', 'CSS', 'JavaScript'],
       technologiesLiCls: ['tag', 'tag', 'tag'],
       image: './images/todolistpopup.png',
-      feature: ['Canopy', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2022'],
+      feature: ['Microverse', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2022'],
       featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
       live: 'https://kusilaw.github.io/To-Do-List/',
       source: 'https://github.com/kusiLaw/To-Do-List',
       description: ' A simple project that allows users to track their daily activities.'
        + 'Items on the list can be marked as completed, can be re-arrange using drag and drop,'
-      + 'delete individual tasks or delete all tasks marked as completed',
+      + 'delete individual tasks, or delete all tasks marked as completed',
     },
 
     card2: {
       topic: 'Web Dev Courses',
-      technologies: ['html', 'css', 'javaScript'],
+      technologies: ['HTML', 'CSS', 'JavaScript'],
       technologiesLiCls: ['tag', 'tag', 'tag'],
       image: './images/webdevl.png',
       feature: ['Canopy', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2022'],
@@ -82,7 +86,7 @@ const store = {
 
     card3: {
       topic: 'Tonic',
-      technologies: ['html', 'css', 'javaScript'],
+      technologies: ['HTML', 'CSS', 'JavaScript'],
       technologiesLiCls: ['tag', 'tag', 'tag'],
       image: './images/snapshoot3.png',
       feature: ['Canopy', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2022'],
@@ -93,7 +97,7 @@ const store = {
 
     card4: {
       topic: 'Multi-Post Stories',
-      technologies: ['html', 'css', 'javaScript'],
+      technologies: ['HTML', 'CSS', 'JavaScript'],
       technologiesLiCls: ['tag', 'tag', 'tag'],
       image: './images/snapshoot4.png',
       feature: ['Canopy', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2022'],
@@ -268,7 +272,7 @@ function plugTOParent() {
 
 document.querySelector('#seeProjectMC1').addEventListener('click', (event) => {
   plugTOParent();
-  populateContent(store.mobile, store.mobile.card1);
+  populateContent(store.desktop, store.desktop.card4);
   document.querySelector('#cardContainer').style.display = 'flex';
   event.stopPropagation();
 
@@ -292,7 +296,7 @@ document.querySelector('#seeProjectMC2').addEventListener('click', (event) => {
 
 document.querySelector('#seeProjectMC3').addEventListener('click', (event) => {
   plugTOParent();
-  populateContent(store.mobile, store.mobile.card3);
+  populateContent(store.desktop, store.desktop.card3);
   document.querySelector('#cardContainer').style.display = 'flex';
   event.stopPropagation();
 
@@ -304,7 +308,7 @@ document.querySelector('#seeProjectMC3').addEventListener('click', (event) => {
 
 document.querySelector('#seeProjectMC4').addEventListener('click', (event) => {
   plugTOParent();
-  populateContent(store.mobile, store.mobile.card4);
+  populateContent(store.mobile, store.mobile.card1);
   document.querySelector('#cardContainer').style.display = 'flex';
   event.stopPropagation();
 
@@ -314,9 +318,10 @@ document.querySelector('#seeProjectMC4').addEventListener('click', (event) => {
   });
 });
 
+// ------------------------
 document.querySelector('#seeProjectDC1').addEventListener('click', (event) => {
   plugTOParent();
-  populateContent(store.desktop, store.desktop.card1);
+  populateContent(store.desktop, store.desktop.card4);
   document.querySelector('#cardContainer').style.display = 'flex';
   event.stopPropagation();
 
@@ -352,7 +357,7 @@ document.querySelector('#seeProjectDC3').addEventListener('click', (event) => {
 
 document.querySelector('#seeProjectDC4').addEventListener('click', (event) => {
   plugTOParent();
-  populateContent(store.desktop, store.desktop.card4);
+  populateContent(store.desktop, store.desktop.card1);
   document.querySelector('#cardContainer').style.display = 'flex';
   event.stopPropagation();
 

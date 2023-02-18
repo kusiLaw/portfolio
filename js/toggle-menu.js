@@ -102,32 +102,27 @@ btn.addEventListener('click', (event) => {
 //   console.log("draging")
 // })
 
-{/* <button type="button" class="normal-btn" id="btn-language"> */}
-const btn_language = document.querySelector('#btn-language');
+{ /* <button type="button" class="normal-btn" id="btn-language"> */ }
+const btnLanguage = document.querySelector('#btn-language');
 
-btn_language.addEventListener('click', (event) => {
+btnLanguage.addEventListener('click', (event) => {
+  document.querySelector('.lang-list').classList.toggle('hide');
+  btnLanguage.firstElementChild.classList.toggle('hide');
+  btnLanguage.lastElementChild.classList.toggle('hide');
+});
 
-   document.querySelector('.lang-list').classList.toggle('hide')
-   btn_language.firstElementChild.classList.toggle('hide')
-   btn_language.lastElementChild.classList.toggle('hide')
-})
+const btnFramework = document.querySelector('#btn-framework');
 
+btnFramework.addEventListener('click', (event) => {
+  document.querySelector('.list-framework').classList.toggle('hide');
+  btnFramework.firstElementChild.classList.toggle('hide');
+  btnFramework.lastElementChild.classList.toggle('hide');
+});
 
-const btn_framework = document.querySelector('#btn-framework');
+const btnSkills = document.querySelector('#btn-skills');
 
-btn_framework.addEventListener('click', (event) => {
-
-   document.querySelector('.list-framework').classList.toggle('hide')
-   btn_framework.firstElementChild.classList.toggle('hide')
-   btn_framework.lastElementChild.classList.toggle('hide')
-})
-
-
-const btn_skills = document.querySelector('#btn-skills');
-
-btn_skills.addEventListener('click', (event) => {
-
-   document.querySelector('.list-skills').classList.toggle('hide')
-   btn_skills.firstElementChild.classList.toggle('hide')
-   btn_skills.lastElementChild.classList.toggle('hide')
-})
+btnSkills.addEventListener('click', (event) => {
+  document.querySelector('.list-skills').classList.toggle('hide');
+  btnSkills.firstElementChild.classList.toggle('hide');
+  btnSkills.lastElementChild.classList.toggle('hide');
+});

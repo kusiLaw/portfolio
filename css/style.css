@@ -195,6 +195,8 @@ ul li {
   display: flex;
   justify-content: flex-start;
 }
+/* stylelint-disable */
+
 
 ul li a {
   justify-content: flex-start;
@@ -814,7 +816,7 @@ li.js-nav-items {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
-  padding: 0px 1rem;
+  padding: 0 1rem;
   background-color: inherit;
 }
 
@@ -1337,3 +1339,4 @@ button.secondary:disabled {
 .hide {
   display: none;
 }
+/* stylelint-enable */

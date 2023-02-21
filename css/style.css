@@ -42,6 +42,9 @@ body {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 #nav-btn {
@@ -642,6 +645,11 @@ button.secondary {
   flex: 1 0 100%;
 }
 
+.microverse{
+ text-decoration: none;
+ color: #6070ff;
+}
+
 .lang {
   font-weight: 500;
   font-size: 18px;
@@ -1132,6 +1140,9 @@ div#primaryText {
     display: flex;
     border: 2px solid;
     font-size: 24px;
+    display: flex;
+    align-items: last baseline;
+    /* text-align: center; */
   }
 
   .presentation-content {

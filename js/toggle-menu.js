@@ -25,7 +25,7 @@ function createMyMenu() {
   const ul = createMyElement('ul', 'js_nav', 'js-nav');
   let li;
   let a;
-  const content = ['Portfolio', 'About', 'Contact'];
+  const content = ['Projects', 'About', 'Contact'];
   const innerLinks = ['#my-works', '#me', '#contact'];
   // create individual li and aattact to ul
   for (let i = 0; i < content.length; i += 1) {
@@ -76,7 +76,7 @@ btn.addEventListener('click', (event) => {
     event.stopPropagation();
   });
 
-  document.querySelector('#Portfolio').addEventListener('click', () => {
+  document.querySelector('#Projects').addEventListener('click', () => {
     removeFromPage(firstToRemove);
     // btnMob.style.display = 'inline';
     btn.style.visibility = 'visible';

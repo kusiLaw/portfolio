@@ -1050,6 +1050,12 @@ div#primaryText {
   width: 150px;
 }
 
+.about-text {
+ margin-bottom: 1rem;
+
+ /* font-size: 1rem; */
+}
+
 @media screen and (min-width: 768px) {
   .header-container {
     padding: 18px 0;
@@ -1304,12 +1310,6 @@ div#primaryText {
 
   .about-items {
     width: 50%;
-  }
-
-  .about-text {
-    margin-bottom: 1rem;
-
-    /* font-size: 1rem; */
   }
 
   .frame7 h3,

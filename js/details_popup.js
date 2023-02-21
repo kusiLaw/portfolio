@@ -2,16 +2,16 @@ const store = {
 
   desktop: {
     card1: {
-      topic: 'To Do List',
+      topic: 'Food Recipe',
       technologies: ['HTML', 'CSS', 'JavaScript'],
       technologiesLiCls: ['tag', 'tag', 'tag'],
       image: './images/recipe.png',
-      feature: ['Microverse', './images/Counter.png', 'Front End Dev', './images/Counter.png', '2022'],
+      feature: ['Web', './images/Counter.png', 'Front End Dev', './images/Counter.png', '2022'],
       featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
-      live: 'https://kusilaw.github.io/To-Do-List/',
-      source: 'https://github.com/kusiLaw/To-Do-List',
+      live: 'https://kusilaw.github.io/food_recipies/dist/',
+      source: 'https://github.com/kusiLaw/food_recipies',
       description: 'Food Recipe is a capstone project app that displays food recipes for a restaurant using APIs.'
-      + 'Users can leave comments, like, and make reservations.',
+      + ' Users can leave comments, like, and make reservations.',
 
     },
 
@@ -20,13 +20,13 @@ const store = {
       technologies: ['HTML', 'Rails', 'CSS', 'JavaScript'],
       technologiesLiCls: ['tag', 'tag', 'tag', 'tag'],
       image: './images/webdevl.png',
-      feature: ['FACEBOOK', './images/Counter.png', 'Full Stack Dev', './images/Counter.png', '2022'],
+      feature: ['Web', './images/Counter.png', 'Full Stack Dev', './images/Counter.png', '2022'],
       featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
       live: 'https://kusilaw.github.io/web-dev-course/',
       source: 'https://github.com/kusiLaw/web-dev-course',
-      description: 'A simple demo web development website that allows users to sing up to a course.'
-      + 'For demonstration purposes, only the home and about section has been fully implemented on different screen sizes',
-    },
+      description: ' A simple demo web development website that allows users to sign up for a course.'
+      + ' For demonstration purposes, only the home and about section has been fully implemented on different screen sizes.',
+     },
 
     card3: {
       topic: 'Countries Fact',
@@ -37,8 +37,9 @@ const store = {
       featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
       live: 'https://mellifluous-begonia-3df97c.netlify.app/',
       source: 'https://github.com/kusiLaw/countries_information',
-      description: ' Countries Information is a simple react capstone project, that displays information about each country around the world.'
-     + 'Users can sort the countries according to continents. Built with React.',
+      description: 'Countries Fact is a simple react capstone project that displays information about each country around the world. '
+     + ' Users can sort the countries according to continents. Built with React.',
+ 
     },
 
     card4: {
@@ -46,13 +47,15 @@ const store = {
       technologies: ['Rails', 'CSS', 'HTML'],
       technologiesLiCls: ['tag', 'tag', 'tag', 'tag'],
       image: './images/budget.png',
-      feature: ['Microverse', './images/Counter.png', 'Full Stack Dev', './images/Counter.png', '2022'],
+      feature: ['Web', './images/Counter.png', 'Full Stack Dev', './images/Counter.png', '2022'],
       featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
       live: 'https://budgisee.onrender.com/',
       source: 'https://github.com/kusiLaw/budget_app',
-      description: 'A simple demo web development website that allows users to sing up to a course.'
-     + 'For demonstration purposes, only the home and about section has been fully implemented on different screen sizes',
-    },
+      description: ' BudgiSEE is a simple mobile web application for managing budgets.'
+      + ' Users can create a new category and add all expenses that belong to that category. Built with Ruby on Rails.',
+     },
+
+    
 
   },
 
@@ -63,7 +66,7 @@ const store = {
       technologies: ['HTML', 'CSS', 'JavaScript'],
       technologiesLiCls: ['tag', 'tag', 'tag'],
       image: './images/webdevl.png',
-      feature: ['Canopy', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2022'],
+      feature: ['Web', './images/Counter.png', 'Back End Dev', './images/Counter.png', '2022'],
       featureLiCls: ['clients', 'counters', 'roles', 'counters', 'years'],
       live: 'https://kusilaw.github.io/web-dev-course/',
       source: 'https://github.com/kusiLaw/web-dev-course',
@@ -124,6 +127,8 @@ function createSkeletonElementStructure() {
   const action = createMyElement('div', 'actionbtn', 'action');
   const btnSLink = createMyElement('a', 'action-button-source-link');
   const btnLLink = createMyElement('a', 'action-button-live-link');
+  btnSLink.setAttribute('target', '_blank');
+  btnLLink.setAttribute('target', '_blank');
 
   const liveIcon = createMyElement('img', 'liveIcon'); // 'img-details');
   liveIcon.setAttribute('src', './images/live.svg');
@@ -132,6 +137,7 @@ function createSkeletonElementStructure() {
   const sourceIcon = createMyElement('img', 'sourceIcon'); // 'img-details');
   sourceIcon.setAttribute('src', './images/git.svg');
   sourceIcon.setAttribute('alt', 'github icon');
+
 
   btnLLink.textContent = 'See live';
   btnSLink.textContent = 'See Source';

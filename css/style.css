@@ -145,11 +145,25 @@ section.presentation {
   /* font-weight: bold; */
   font-size: 2rem;
   line-height: 2.4rem;
-  display: flex;
-  align-items: flex-end;
+  /* display: flex; */
+  /* align-items: flex-end; */
   color: #172b4d;
   flex-grow: 0;
   flex-wrap: wrap;
+}
+
+h1 span{
+ display: block;
+}
+
+h1 span.name-is{
+ font-size: 1.1rem;
+}
+
+h1 span.carrier{
+ font-size: 1.2rem;
+ color: #6070ff ;
+  display: inline-block;
 }
 
 .text-secondry {
@@ -539,8 +553,8 @@ button.secondary {
   justify-content: center;
   height: auto;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 19px;
+  /* line-height: 24px; */
   color: #344563;
   flex-grow: 0;
 }
@@ -597,7 +611,7 @@ button.secondary {
 
 .frame7 h3 {
   font-weight: 800;
-  font-size: 20px;
+  font-size: 22px;
   color: #172b4d;
 }
 
@@ -1271,10 +1285,16 @@ div#primaryText {
     padding: 142px;
     flex-direction: row;
     gap: 25px;
+    font-size: 62.5%;
   }
 
   .about-items {
     width: 50%;
+  }
+
+  .about-text{
+   margin-bottom: 1rem;
+   /* font-size: 1rem; */
   }
 
   .frame7 h3,

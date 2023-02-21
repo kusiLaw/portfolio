@@ -26,7 +26,7 @@ const store = {
       source: 'https://github.com/kusiLaw/web-dev-course',
       description: ' A simple demo web development website that allows users to sign up for a course.'
       + ' For demonstration purposes, only the home and about section has been fully implemented on different screen sizes.',
-     },
+    },
 
     card3: {
       topic: 'Countries Fact',
@@ -39,7 +39,7 @@ const store = {
       source: 'https://github.com/kusiLaw/countries_information',
       description: 'Countries Fact is a simple react capstone project that displays information about each country around the world. '
      + ' Users can sort the countries according to continents. Built with React.',
- 
+
     },
 
     card4: {
@@ -53,9 +53,7 @@ const store = {
       source: 'https://github.com/kusiLaw/budget_app',
       description: ' BudgiSEE is a simple mobile web application for managing budgets.'
       + ' Users can create a new category and add all expenses that belong to that category. Built with Ruby on Rails.',
-     },
-
-    
+    },
 
   },
 
@@ -137,7 +135,6 @@ function createSkeletonElementStructure() {
   const sourceIcon = createMyElement('img', 'sourceIcon'); // 'img-details');
   sourceIcon.setAttribute('src', './images/git.svg');
   sourceIcon.setAttribute('alt', 'github icon');
-
 
   btnLLink.textContent = 'See live';
   btnSLink.textContent = 'See Source';
